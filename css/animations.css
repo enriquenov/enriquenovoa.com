@@ -1,0 +1,159 @@
+/*TITLES ANIMATIONS */
+
+.slideInLeft {
+  animation: slideInLeft 1.2s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0) skewX(140deg);
+    /*visibility: visible;*/
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) skewX(140deg);
+  }
+}
+
+.slideInRight {
+  animation: slideInRight 1.2s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 1;
+    transform: translate3d(100%, 0, 0) skewX(50deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) skewX(50deg);
+  }
+}
+
+
+.bounceInDownSwing {
+  animation: bounceInDownSwing 2.5s ease-in;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounceInDownSwing {
+  from, 36%, 45%, 54%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0) rotate(0);
+  }
+
+  18% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0) rotate(0);
+  }
+
+  22.2% {
+    transform: translate3d(0, -10px, 0) rotate(0);
+  }
+
+  27.6% {
+    transform: translate3d(0, 5px, 0) rotate(0);
+  }
+
+  30% {
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+
+  36% {
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+
+  65% {
+    transform: translate3d(20px, 0, 0) rotate(-3deg)
+  }
+
+  80% {
+    transform: translate3d(-15px, 0, 0) rotate(2deg)
+  }
+
+  95% {
+    transform: translate3d(8px, 0, 0) rotate(1deg)
+  }
+}
+
+/*SKILLS ANIMATIONS */
+
+.html {
+  animation: skillBar 1s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes skillBar {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width:100%;
+  }
+}
+
+.css {
+  animation: skillBar2 1s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes skillBar2 {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width:96%;
+  }
+}
+
+.javascript {
+  animation: skillBar3 1s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes skillBar3 {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width:98%;
+  }
+}
+
+/*CONTENT ANIMATIONS*/
+
+.fadeInUp {
+  animation: fadeInUp 1.3s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

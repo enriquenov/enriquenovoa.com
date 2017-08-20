@@ -1,0 +1,329 @@
+body {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-align: center;
+}
+
+svg {
+  margin-top: 75px;
+}
+
+svg .st0{fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-dasharray:9.7168,9.7168;}
+svg .st1{fill:none;stroke:#FFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+/*svg .st2{fill:none;stroke:red;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}*/
+
+svg g#animatedLogo line#menorQueTop {
+  transform-origin: bottom;
+  animation: rotating1 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#menorQueBottom {
+  transform-origin: top;
+  animation: rotating2 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#eTop {
+  transform-origin: center;
+  animation: rotating3 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#eBottom {
+  transform-origin: center;
+  animation: rotating4 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#eCenterLeft {
+  transform-origin: center;
+  animation: toRight 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#eCenterRight {
+  transform-origin: center;
+  animation: shrink 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#nLeft {
+  transform-origin: center;
+  animation: stretch 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#nCenterLeft {
+  transform-origin: top;
+  animation: toLeft 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#nCenterRight {
+  transform-origin: bottom;
+  animation: toRight2 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#nRight {
+  transform-origin: center;
+  animation: toLeft2 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#mayorQueTop {
+  transform-origin: bottom;
+  animation: rotating5 8s ease-in-out infinite;
+}
+
+svg g#animatedLogo line#mayorQueBottom {
+  transform-origin: top;
+  animation: rotating6 8s ease-in-out infinite;
+}
+
+
+@keyframes rotating1 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(39.8deg) translate(2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(39.8deg) translate(2.5px, 0px) scale(0.4);
+    stroke: #055558;
+  }
+  50% {
+    transform: rotate(39.8deg) translate(2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes rotating2 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(-39.8deg) translate(2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(-39.8deg) translate(2.5px, 0px) scale(0.4);
+    stroke: #055558;
+  }
+  50% {
+    transform: rotate(-39.8deg) translate(2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes rotating3 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(-64deg) translate(-2px, 7px) scale(1.1);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(-64deg) translate(-2px, 7px) scale(1.1);
+    stroke: #0BD0D8;
+  }
+  50% {
+    transform: rotate(-64deg) translate(-2px, 7px) scale(1.1);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes rotating4 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(64deg) translate(-2px, -7px) scale(1.1);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(64deg) translate(-2px, -7px) scale(1.1);
+    stroke: #0BD0D8;
+  }
+  50% {
+    transform: rotate(64deg) translate(-2px, -7px) scale(1.1);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes toRight {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  5% {
+    transform: translate(4px, 0px) scale(0.8);
+    stroke: #FFF;
+  }
+  30% {
+    transform: translate(4px, 0px) scale(0.8);
+    stroke: #089398;
+  }
+  50% {
+    transform: translate(4px, 0px) scale(0.8);
+    stroke: #FFF;
+  }
+  55% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(0.8);
+    stroke: #FFF;
+  }
+  30% {
+    transform: scale(0.8);
+    stroke: #089398;
+  }
+  50% {
+    transform: scale(0.8);
+    stroke: #FFF;
+  }
+  55% {
+    transform: scale(1);
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+
+  }
+  5% {
+    transform: scale(1.35);
+    stroke: #FFF;
+  }
+  30% {
+    transform: scale(1.35);
+    stroke: #2FE5AE;
+  }
+  50% {
+    transform: scale(1.35);
+    stroke: #FFF;
+  }
+  55% {
+    transform: scale(1);
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(26.5deg) translate(-0.5px, 0.5px) scale(0.8);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(26.5deg) translate(-0.5px, 0.5px) scale(0.8);
+    stroke: #2FE5AE;
+  }
+  50% {
+    transform: rotate(26.5deg) translate(-0.5px, 0.5px) scale(0.8);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes toRight2 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(26.4deg) translate(-6px, -8px) scale(0.8);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(26.4deg) translate(-6px, -8px) scale(0.8);
+    stroke: #089398;
+  }
+  50% {
+    transform: rotate(26.4deg) translate(-6px, -8px) scale(0.8);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes toLeft2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  5% {
+    transform: translate(-11px, 0px) scale(1.1);
+    stroke: #FFF;
+  }
+  30% {
+    transform: translate(-11px, 0px) scale(1.1);
+    stroke: #0BD0D8;
+  }
+  50% {
+    transform: translate(-11px, 0px) scale(1.1);
+    stroke: #FFF;
+  }
+  55% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes rotating5 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(-39.8deg) translate(-2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(-39.8deg) translate(-2.5px, 0px) scale(0.4);
+    stroke: #055558;
+  }
+  50% {
+    transform: rotate(-39.8deg) translate(-2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  55% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
+
+@keyframes rotating6 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  5% {
+    transform: rotate(39.8deg) translate(-2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  30% {
+    transform: rotate(39.8deg) translate(-2.5px, 0px) scale(0.4);
+    stroke: #055558;
+  }
+  50% {
+    transform: rotate(39.8deg) translate(-2.5px, 0px) scale(0.4);
+    stroke: #FFF;
+  }
+  52% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+}
