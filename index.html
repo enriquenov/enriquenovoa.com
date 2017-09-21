@@ -90,21 +90,29 @@
 							<div class="bottom-section">
 
 								<ul id="myMenu">
-									<li><a id="high1" href="#page1"><span>home</span></a></li>
-									<li><a id="high2" href="#page2"><span>resume</span></a></li>
-									<li><a id="high3" href="#page3"><span>my work</span></a></li>
-									<li><a id="high4" href="#page4"><span>contact</span></a></li>
+									<li><a id="high1" href="#home"><span>home</span></a></li>
+									<li><a id="high2" href="#resume"><span>resume</span></a></li>
+									<li><a id="high3" href="#work"><span>my work</span></a></li>
+									<li><a id="high4" href="#contact"><span>contact</span></a></li>
 								</ul>
 
 								<ul id="social-media">
 									<li>
-										<a href="#"><i class="fa fa-github"></i></a>
+										<a href="https://github.com/enriquenov" target="_blank"><i class="fa fa-github"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.linkedin.com/in/luis-enrique-novoa-135721117/" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-codepen"></i></a>
+										<a href="https://codepen.io/enriquenov/" target="_blank"><i class="fa fa-codepen"></i></a>
+									</li>
+								</ul>
+								<ul id="resumePdf">
+									<li>
+										Download my resume:
+									</li>
+									<li>
+										<a href="enriquenovoa-resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 									</li>
 								</ul>
 
@@ -125,13 +133,8 @@
 
 		<div class="container-fluid">
 
-			<!-- Preloader -->
-			<!-- <div id="preloader">
-				<div id="status">&nbsp;</div>
-			</div> -->
 
-
-			<div id="page1" class="row">
+			<div id="home" class="row">
 
 				<div class="col-xs-9">
 
@@ -175,7 +178,7 @@
 											</div>
 										</a>
 
-										<img id="face-img" class="face-img" src="img/designer-coder.jpg">
+										<img id="face-img" class="face-img" src="img/creative-coder.jpg">
 
 										<div id="designer-img" class="designer-img"></div>
 										<div id="coder-img" class="coder-img"></div>
@@ -199,7 +202,7 @@
 
 
 			<!-- 2. RESUME  -->
-			<div id="page2" class="row">
+			<div id="resume" class="row">
 
 				<div class="col-xs-9">
 
@@ -357,7 +360,7 @@
 			</div>
 
 
-			<div id="page3" class="row">
+			<div id="work" class="row">
 
 				<div class="col-xs-9 left">
 
@@ -370,7 +373,7 @@
 
 							<div class="home-mast latest contAnimated">
 								<div class="home-mast__container">
-									<a href="#one" target="_blank">
+									<a href="projects/responsive-website/index.html" target="_blank">
 										<div>
 											<div class="absolute-bg" style="background-image: url('img/websites/site1.jpg');"></div>
 										</div>
@@ -402,8 +405,6 @@
 								</div>
 							</div>
 
-
-							<!-- <img id="envelope" src="img/envelope.svg"> -->
 
 							<div class="home-mast oldest contAnimated">
 								<div class="home-mast__container">
@@ -454,7 +455,7 @@
 
 
 
-			<div id="page4" class="row">
+			<div id="contact" class="row">
 
 				<div class="col-xs-9 left">
 
@@ -549,16 +550,19 @@
 			var controller2 = new ScrollMagic.Controller();
 
 			// build scenes
-			new ScrollMagic.Scene({triggerElement: "#page1", duration: 793})
+			new ScrollMagic.Scene({triggerElement: "#home", duration: 765})
 							.setClassToggle("#high1", "actived") // add class toggle
+							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
-			new ScrollMagic.Scene({triggerElement: "#page2", duration: 1596})
+			new ScrollMagic.Scene({triggerElement: "#resume", duration: 1560})
 							.setClassToggle("#high2", "actived") // add class toggle
+							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
-			new ScrollMagic.Scene({triggerElement: "#page3", duration: 794})
+			new ScrollMagic.Scene({triggerElement: "#work", duration: 768})
 							.setClassToggle("#high3", "actived") // add class toggle
+							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
-			new ScrollMagic.Scene({triggerElement: "#page4"})
+			new ScrollMagic.Scene({triggerElement: "#contact"})
 							.setClassToggle("#high4", "actived") // add class toggle
 							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
