@@ -715,6 +715,11 @@ a {
   margin-bottom: 2px;
 }
 
+.education p span {
+  font-size: 12px;
+  font-style: italic;
+}
+
 .title3 {
   opacity: 0;
   font-size: 36px;
@@ -1565,16 +1570,18 @@ footer p {
   }
 
   .education {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .title7 {
     width: 950px;
-    top: 990px;
+    top: 1050px;
   }
 
   .hobbies {
     margin: 210px auto 100px;
+    padding-left: 40px;
+    width: 120%;
   }
 
   .home-mast.latest {
