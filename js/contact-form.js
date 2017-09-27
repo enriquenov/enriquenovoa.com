@@ -14,8 +14,10 @@ $(document).ready(function(){
         //simple validation at client's end
         //we simply change border color to red if empty field using .css()
         var proceed = true;
+
         if (user_name == "") {
             $('input[name=name]').css('border-color', '#e41919');
+            required = true;
             proceed = false;
         }
         if (user_email == "") {

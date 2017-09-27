@@ -274,6 +274,11 @@ p {
   bottom: 60px;
   width: 320px;
   min-height: 600px;
+
+  /*height: 80vh;
+  top: 10vh;
+  bottom: 10vh;*/
+
   position: fixed;
   box-shadow: 2px 2px 15px #888;
   box-shadow: 3px 5px 15px #222;
@@ -284,7 +289,7 @@ p {
 #triptico .top-section, #triptico .bottom-section {
   border: none;
   margin: 0;
-  padding: 0;
+  /*padding: 0;*/
   outline: 0;
   width: 100%;
 }
@@ -1066,64 +1071,28 @@ a {
 	transition-delay:1s;
 	z-index: 310;
 }
-#name,#email,#phone,#messarea,#send{
-	margin: 0;
-	padding: 0 0 0 10px;
-	width: 100%;
-	height:40px;
-	float: left;
-	display: block;
-	font-size: 18px;
-	color: #2b67cb;
-	border:none;
-	border-bottom:1px solid #bdbdbd;
-	letter-spacing: normal;
-}
-#messarea{
-	height: 117px;
-	width: 100%;
-  margin: 0 auto;
-	overflow: auto;
-	border:none;
-	padding: 10px;
-}
-#send {
-  width: 30%;
-  float: none;
-  font-size: 24px;
-  font-family: "Julius Sans One";
-  font-weight: bolder;
-  margin: 10px auto;
-	padding: 5px 0 6px;
-	border: none;
-  border-radius: 20px;
-	cursor:  pointer;
-	background: #00A388;
-	color: #fff;
-	transition:.4s;
-	letter-spacing: 1px;
-}
 
-#send:hover {
-  background:#FF6138;
-  transition:0.35s;
-}
+
+
+
 
 ::-moz-placeholder{color: #2c3e50;font-family: 'Quattrocento Sans';font-size: 20px; opacity: 0.7;}
-::-webkit-input-placeholder {color: #2c3e50; font-family: 'Quattrocento Sans';font-size: 20px; opacity: 0.7;}
+::-webkit-input-placeholder {color: #2c3e50; font-family: 'Quattrocento Sans';font-size: 14px; opacity: 0.7;}
 *:focus {outline: none;}
-input:focus:invalid,textarea:focus:invalid {
- /* when a field is considered invalid by the browser */
+
+/*input:focus:invalid,textarea:focus:invalid {
+  when a field is considered invalid by the browser
     background: #fff url(images/invalid.png) no-repeat 98% center;
     box-shadow: 0 0 5px #d45252;
     border:1px solid #b03535;
 }
 input:required:valid,textarea:required:valid {
-	 /*when a field is considered valid by the browser */
+	 when a field is considered valid by the browser
     background: #fff url(images/valid.png) no-repeat 98% center;
     box-shadow: 0 0 5px #5cd053;
     border-color: #28921f;
-}
+}*/
+
 
 
 .form input,
@@ -1221,7 +1190,6 @@ input:required:valid,textarea:required:valid {
   float: right;
   border-radius: 15px;
 }
-
 
 .contact-item a,
 .contact-item h5 {
@@ -1577,7 +1545,7 @@ footer p {
 @media only screen and (min-width: 1366px) {
 
   .content {
-    margin-top: 0;
+    margin-top: 170px;
     margin-left: -20px;
   }
 
@@ -1650,6 +1618,10 @@ footer p {
 
 @media only screen and (min-width: 1440px) {
 
+  #contact {
+    height: 810px;
+  }
+
   .title2 {
     margin: 140px auto 0 auto;
   }
@@ -1658,15 +1630,25 @@ footer p {
     height: 200px;
   }
 
+  .content {
+    /*margin-top: 170px;*/
+    margin-left: 0;
+  }
+
   #triptico {
-    top: 120px;
-    bottom: 120px;
-    right: 100px;
-    width: 280px;
+    top: 5vh;
+    bottom: auto;
+    right: 60px;
+    width: 300px;
+    height: 90vh;
   }
 
   #social-media {
-    margin: 110px auto 0;
+    margin: 20vh auto 0;
+  }
+
+  #resumePdf {
+    margin: 40px auto 0;
   }
 
   .about {
@@ -1710,6 +1692,14 @@ footer p {
 
 @media only screen and (min-width: 1600px) {
 
+  #home, #resume, #work, #contact {
+    max-width: 1527px;
+  }
+
+  #contact {
+    height: 765px;
+  }
+
   .container-fluid {
     padding-left: 28px;
     padding-right: 28px;
@@ -1724,7 +1714,7 @@ footer p {
   }
 
   .content {
-    margin-top: 165px;
+    /*margin-top: 170px;*/
     margin-left: 0;
   }
 
@@ -1733,9 +1723,14 @@ footer p {
     top: 60px;
     right: 58px;
     width: 342px;
+    height: auto;
   }
 
-  #social-media, #resumePdf {
+  #social-media {
+    margin: 7vh auto 0;
+  }
+
+  #resumePdf {
     margin: 50px auto 0;
   }
 
@@ -1783,5 +1778,29 @@ footer p {
 
   .frame {
     margin: 350px auto 64px;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  #triptico {
+    top: 10vh;
+    bottom: auto;
+    height: 80vh;
+    right: 14vw;
+  }
+  #social-media {
+    margin: 21vh auto 0;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  #triptico {
+    top: 5vh;
+    height: 90vh;
+    bottom: auto;
+    right: 22vw;
+  }
+  #resumePdf {
+    margin: 28vh auto 0;
   }
 }

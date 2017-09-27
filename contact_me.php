@@ -25,6 +25,7 @@ if($_POST)
 		die($output);
 	}
 
+
 	//Sanitize input data using PHP filter_var().
 	$user_Name        = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
 	$user_Email       = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
@@ -73,7 +74,7 @@ if($_POST)
 		$output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
 		die($output);
 	}else{
-		$output = json_encode(array('type'=>'message', 'text' => 'Hi, '.$user_Name .'! Thank you for your email!'));
+		$output = json_encode(array('type'=>'message','text' => 'Hi, '.$user_Name .'! Thank you for your email!'));
 		die($output);
 	}
 }
