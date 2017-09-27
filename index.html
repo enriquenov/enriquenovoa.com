@@ -409,9 +409,9 @@
 											<div class="absolute-bg" style="background-image: url('img/websites/huarique-restaurant.png');"></div>
 										</div>
 									</a>
-									<a href="work/commenting-app/index.html" target="_blank">
+									<a href="work/e-commerce/index.html" target="_blank">
 										<div>
-											<div class="absolute-bg" style="background-image: url('img/websites/commenting-app.png');"></div>
+											<div class="absolute-bg" style="background-image: url('img/websites/e-commerce-template.png');"></div>
 										</div>
 									</a>
 									<a href="work/marvel-quiz/index.html" target="_blank">
@@ -419,9 +419,9 @@
 											<div class="absolute-bg" style="background-image: url('img/websites/marvel-quiz.png');"></div>
 										</div>
 									</a>
-									<a href="#seven" target="_blank">
+									<a href="work/commenting-app/index.html" target="_blank">
 										<div>
-											<div class="absolute-bg" style="background-image: url('img/websites/site7.png');"></div>
+											<div class="absolute-bg" style="background-image: url('img/websites/commenting-app.png');"></div>
 										</div>
 									</a>
 									<a href="#eight" target="_blank">
@@ -434,11 +434,11 @@
 											<div class="absolute-bg" style="background-image: url('img/websites/site9.jpg');"></div>
 										</div>
 									</a>
-									<a href="#ten" target="_blank">
+									<!-- <a href="#ten" target="_blank">
 										<div>
 											<div class="absolute-bg" style="background-image: url('img/websites/site10.png');"></div>
 										</div>
-									</a>
+									</a> -->
 								</div>
 							</div>
 						</div>
@@ -468,18 +468,26 @@
 				        </h1>
 				      </div>
 
+
+
 				      <div class="message">
-				        <form method="post" action="contact.php">
-				          <input type="text" name="name" id="name" placeholder=" Name* " required>
-
-				          <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
-
-				          <input type="text" name="phone" id="phone" placeholder=" Phone (optional)">
-
-				          <textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
-
-				          <input type="submit" value="Go!" id="send">
-				        </form>
+								<form id="contact-form" class="form form-contact">
+	                <div class="col-md-12">
+	                  <input id="input-name" name="name" type="text" placeholder="Name*" required class="form-control input-md">
+	                </div>
+	                <div class="col-md-12">
+	                  <input id="input-email" name="email" type="email" placeholder="Email*" required class="form-control input-md">
+	                </div>
+	                <div class="col-md-12">
+	                  <textarea id="input-message" name="message" placeholder="Message*" required class="form-control input-md"></textarea>
+	                </div>
+	                <div class="col-md-7">
+	                  <div id="send-result" class="mt-20"></div>
+	                </div>
+	                <div class="col-md-5">
+	                  <button id="submit-message" class="btn btn-coffee btn-medium">Send message</button>
+	                </div>
+	              </form>
 				      </div>
 				      <div class = "bottomEnv"></div>
 				      <div class = "leftEnv"></div>
@@ -516,6 +524,7 @@
 		<script src="js/ScrollMagic.min.js"></script>
 		<script src="js/debug.addIndicators.min.js"></script>
 		<script src="js/smooth-scroll.min.js"></script>
+		<script src="js/contact-form.js"></script>
 
 
 		<!-- <script type="text/javascript" src="js/jquery.fullPage.min.js"></script> -->
@@ -678,7 +687,6 @@
 			}, function() {
 
 				//Show the page once images are loaded
-
 					$('#face').animateHome();
 					$('#face').resizeFace();
 

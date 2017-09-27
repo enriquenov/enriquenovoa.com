@@ -10,15 +10,8 @@ $(document).ready(function()
             }
         });
 
-
-        $('button#backBtn1').hide();
-
-        // $('button#backBtn').click(function(){
-        //   parent.history.back();
-        //   return false;
-        // });
+        $('#back-button').hide();
 });
-
 
 // SEARCH BUTTON EVENT
 
@@ -26,8 +19,7 @@ var searchBtn = document.getElementById('searchBtn');
 var input = document.getElementById('input');
 var results = document.getElementById('results');
 var searcher = document.getElementById('searcher');
-var backBtn1 = document.getElementById('backBtn1');
-
+// var backButton = document.getElementById('back-button');
 
 searchBtn.addEventListener('click', function() {
   if (input.value === '') {
@@ -36,33 +28,39 @@ searchBtn.addEventListener('click', function() {
     console.log('This function works');
     console.log(input.value);
     $.ajax({
-      url: 'https://www.googleapis.com/books/v1/volumes?q=' + input.value,
+      url: 'https://www.googleapis.com/books/v1/volumes?q=' + input.value + '&maxResults=25',
       dataType: 'json',
       success: function(data) {
         console.log(data);
-        searcher.style.display = "none";
-        backBtn1.style.display = "inline-block";
+        searcher.style.marginTop = "80px";
+        // searcher.style.display = "none";
+        // backButton.style.display = "inline-block";
 
         for (var i = 0; i < data.items.length; i++) {
+
+          var img = document.createElement('img');
+  				var a = document.createElement('a');
+
+  				img.src = data.items[i].volumeInfo.imageLinks.thumbnail;
+          img.alt = data.items[i].volumeInfo.title + " by " + data.items[i].volumeInfo.authors;
+  				a.href = data.items[i].volumeInfo.previewLink;
+  				a.target = "_blank";
+  				a.appendChild(img);
+
+
+
+          results.innerHTML += '<hr>';
           results.innerHTML += '<h1>' + data.items[i].volumeInfo.title + '</h1>';
           results.innerHTML += '<h3>' + 'by '+ data.items[i].volumeInfo.authors + '</h3>';
-          results.innerHTML += '<img src="' + data.items[i].volumeInfo.imageLinks.smallThumbnail + '">';
+          results.appendChild(a);
           results.innerHTML += '<p class="description">' + data.items[i].volumeInfo.description + '</p>';
-          results.innerHTML += '<hr>';
 
         }
-        // results.innerHTML += '<button type="button" class="btn btn-danger" id="backBtn2"></button>';
-        // var backBtn2 = document.getElementById('backBtn2');
+
       },
       type: 'GET'
     });
-    // backBtn2.addEventListener('click', goBack, false);
+
     input.value = '';
   }
 });
-
-backBtn1.addEventListener('click', function() {
-  console.log('yes');
-  searcher.style.display = 'block';
-  results.innerHTML = '';
-}, false);

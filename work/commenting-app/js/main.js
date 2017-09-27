@@ -1,69 +1,81 @@
 //declare constants for textarea, button, and input
-var addPostInput = document.querySelector('input.addPostInput');
-var addTextArea = document.querySelector('textarea.addInput');
-var addPostButton = document.querySelector('button.addPostButton');
+const addPostInput = document.querySelector('input.addPostInput');
+const addTextArea = document.querySelector('textarea.addInput');
+const addPostButton = document.querySelector('button.addPostButton');
 
 //event listener for posting functionality
-addPostButton.addEventListener('click', function() {
-var body = document.getElementsByTagName('body')[0];
+addPostButton.addEventListener('click', () => {
+let body = document.getElementsByTagName('body')[0];
 
-var postBody = document.createElement('div');
+let postBody = document.createElement('div');
 postBody.className = 'postBody';
 
-var header = document.createElement('h1');
-header.className = 'postHeader';
-header.textContent = addPostInput.value;
+if(addPostInput.value == '' || addTextArea.value == '') {
+	alert('You are missing one or more fields!');
+} else {
+	let header = document.createElement('h1');
+	header.className = 'postHeader';
+	header.textContent = addPostInput.value;
 
-var p = document.createElement('p');
-p.className = 'bodyContent';
-p.textContent = addTextArea.value;
+	let p = document.createElement('p');
+	p.className = 'bodyContent';
+	p.textContent = addTextArea.value;
 
-//create div for buttons
-var buttonDiv = document.createElement('div');
-buttonDiv.className = 'buttonDiv'
+	//create div to append buttonDiv and postBody
+	let newPost = document.createElement('div');
+	newPost.className = 'newPost';
 
-//create buttons for div
-var up = document.createElement('button');
-up.className = 'up';
-up.textContent = 'Up';
+	//create div for buttons
+	let buttonDiv = document.createElement('div');
+	buttonDiv.className = 'buttonDiv'
 
-var down = document.createElement('button');
-down.className = 'down';
-down.textContent = 'Down';
+	//create buttons for div
+	let up = document.createElement('button');
+	up.className = 'up';
+	up.textContent = 'Up';
 
-var remove = document.createElement('button');
-remove.className = 'remove';
-remove.textContent = 'Remove';
+	let down = document.createElement('button');
+	down.className = 'down';
+	down.textContent = 'Down';
 
-var showHide = document.createElement('button');
-showHide.className = 'showHide';
-showHide.textContent = 'Hide';
+	let remove = document.createElement('button');
+	remove.className = 'remove';
+	remove.textContent = 'Remove';
 
-//append the header and body of textarea to the body within a div
-postBody.appendChild(header);
-postBody.appendChild(p);
+	let showHide = document.createElement('button');
+	showHide.className = 'showHide';
+	showHide.textContent = 'Hide';
 
-//append all buttons to the buttonDiv
-// buttonDiv.appendChild(up);
-// buttonDiv.appendChild(down);
-buttonDiv.appendChild(remove);
-buttonDiv.appendChild(showHide);
+	//append the header and body of textarea to the body within a div
+	postBody.appendChild(header);
+	postBody.appendChild(p);
 
-body.appendChild(postBody);
-body.appendChild(buttonDiv);
+	//append all buttons to the buttonDiv
+	// buttonDiv.appendChild(up);
+	// buttonDiv.appendChild(down);
+	buttonDiv.appendChild(remove);
+	buttonDiv.appendChild(showHide);
 
-addPostInput.value = '';
-addTextArea.value = '';
+	newPost.appendChild(postBody);
+	newPost.appendChild(buttonDiv);
 
-//create event listener for up, down, remove buttons
-remove.addEventListener('click', function(event) {
-	if(event.target.tagName == 'BUTTON') {
-		if(event.target.className == 'remove') {
-			body.removeChild(postBody);
-			body.removeChild(buttonDiv);
-		}
-	}
-})
+	body.appendChild(newPost);
+
+	// body.appendChild(postBody);
+	// body.appendChild(buttonDiv)
+
+	addPostInput.value = '';
+	addTextArea.value = '';
+
+
+  //create event listener for up, down, remove buttons
+  remove.addEventListener('click', (event) => {
+    if(event.target.tagName == 'BUTTON') {
+      if(event.target.className == 'remove') {
+        body.removeChild(newPost);
+      }
+    }
+  })
 
 //create hide/show event listener for showHide button
 showHide.addEventListener('click', function() {
@@ -82,5 +94,6 @@ showHide.addEventListener('click', function() {
 		remove.style.display = 'none';
 	}
 })
+}
 
 });

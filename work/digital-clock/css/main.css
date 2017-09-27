@@ -1,5 +1,5 @@
-html, body {
-  height: 95%;
+body {
+  height: 70vh;
 }
 
 body {
@@ -21,24 +21,24 @@ body {
   color: #daf6ff;
   font-family: courier, monospace;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   width: 80%;
 }
 
 #time {
-  margin-top: 40vh;
-  font-size: 8em;
+  /* margin-top: 40vh; */
+  font-size: 16vh;
 }
 
 #date {
-  margin-top: 35vh;
-  font-size: 2em;
+  margin-top: 30vh;
+  font-size: 4vh;
 }
 
 .text {
-  font-size: 1.2em;
+  font-size: 2vh;
 }
 
 .text {
-  margin-top: 56vh;
+  /* margin-top: 65vh; */
 }
