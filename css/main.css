@@ -356,12 +356,12 @@ p {
 #social-media li, #resumePdf li {
   display: inline-block;
   border-top: none;
-  margin: 0 18px;
+  margin: 0 20px;
   font-size: 14px;
 }
 
 #social-media li a, #resumePdf li a {
-  font-size: 1.6em;
+  font-size: 2.5em;
 }
 
 #social-media li a:hover, #resumePdf li a:hover {
@@ -957,10 +957,38 @@ a {
   font-size: 36px;
   position: absolute;
   text-align: right;
-  width: 550px;
+  width: 535px;
   margin-top: 60px;
   left: -50px !important;
 }
+
+/*#email-me {
+  position: absolute;
+  left: 55vw;
+  margin-top: 80px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+}
+
+.contact-me {
+  background-color: #FF6138;
+  border-radius: 10px;
+  color: #fff;
+	height: auto;
+  font-family: "Quattrocento Sans";
+  width: 100%;
+  font-size: 26px;
+  padding: 12px;
+  z-index: 190;
+  text-rendering: optimizelegibility;
+  transition: all 0.35s ease-in-out;
+  font-weight: bold;
+}
+
+.fa-paper-plane-o {
+  margin-top: 20px;
+}*/
 
 .frame{
 	width: 600px;
@@ -973,7 +1001,6 @@ a {
 
 #button_open_envelope {
   background-color: #FF6138;
-  /*border: 2px solid #fff;*/
   border-radius: 10px;
   color: #fff;
 	height: auto;
@@ -983,6 +1010,7 @@ a {
   transition:.3s;
   width: 180px;
   z-index: 190;
+  transition: all 0.35s ease-in-out;
 }
 
 #button_open_envelope h1 {
@@ -995,7 +1023,6 @@ a {
 	background: #FFF;
 	color: #FF6138;
 	transform: scale(1.1);
-	transition: all 0.15s ease-in-out;
 	cursor: pointer;
 }
 .message {
@@ -1079,19 +1106,6 @@ a {
 ::-moz-placeholder{color: #2c3e50;font-family: 'Quattrocento Sans';font-size: 20px; opacity: 0.7;}
 ::-webkit-input-placeholder {color: #2c3e50; font-family: 'Quattrocento Sans';font-size: 14px; opacity: 0.7;}
 *:focus {outline: none;}
-
-/*input:focus:invalid,textarea:focus:invalid {
-  when a field is considered invalid by the browser
-    background: #fff url(images/invalid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #d45252;
-    border:1px solid #b03535;
-}
-input:required:valid,textarea:required:valid {
-	 when a field is considered valid by the browser
-    background: #fff url(images/valid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #5cd053;
-    border-color: #28921f;
-}*/
 
 
 
@@ -1444,24 +1458,50 @@ footer p {
 
 @media only screen and (min-width: 1280px) {
 
+  .content {
+    margin-top: 170px;
+    margin-left: -50px;
+  }
+
   .title1 {
     width: 210px;
   }
+
   .title2 {
-    margin: 104px auto 0 auto;
+    margin: 16vh auto 0;
   }
 
-  .content {
-    margin-top: 0;
-    margin-left: -50px;
+  .hanger {
+    height: 25vh;
+  }
+
+  #triptico {
+    top: 6vh;
+    bottom: auto;
+    right: 75px;
+    width: 260px;
+    height: 85vh;
+  }
+
+  #social-media {
+    margin: 12vh auto 0;
+  }
+
+  #resumePdf {
+    margin: 4vh auto 0;
+  }
+
+  #social-media li, #resumePdf li {
+    margin: 0 15px;
+  }
+
+  #resumePdf li:first-child {
+    display: block;
+    padding-bottom: 15px;
   }
 
   .face .designer .description {
     margin-left: 110px;
-  }
-
-  .hanger {
-    height: 200px;
   }
 
   .face .coder .description {
@@ -1472,30 +1512,53 @@ footer p {
     width: 850px;
   }
 
-  .title6 {
-    width: 885px;
-    /*top: 580px;*/
+  .experience {
+    width: 120%;
+    padding-left: 20px;
   }
 
-  .title7 {
-    width: 810px;
-    top: 1110px;
-  }
-
-  .hobbies {
-    padding-left: 80px;
-    width: 110%;
+  .about {
+    width: 120%;
+    margin-left: 70px;
   }
 
   .skills {
     margin: 130px auto 80px 70px;
-    width: 100%;
+    width: 120%;
+  }
+
+  .title4 {
+    width: 450px;
+  }
+
+  .title5 {
+    width: 420px;
+  }
+
+  .title6 {
+    width: 800px;
+  }
+
+  .education {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 120%;
+  }
+
+  .title7 {
+    width: 750px;
+    top: 1050px;
+  }
+
+  .hobbies {
+    padding-left: 20px;
+    width: 142%;
   }
 
   .home-mast.latest {
     width: 240px;
     height: 160px;
-    margin: 250px 18px 0;
+    margin: 220px 18px 0;
   }
 
   .home-mast.oldest {
@@ -1508,35 +1571,8 @@ footer p {
     margin: 365px auto 70px;
   }
 
-
-
-  #triptico {
-    top: 60px;
-    bottom: 60px;
-    right: 75px;
-    width: 260px;
-  }
-
-  .about {
-    margin-left: 70px;
-  }
-
-  .title4 {
-    width: 450px;
-  }
-
-  #social-media {
-    margin: 100px auto 0;
-  }
-
-  .title5 {
-    width: 420px;
-  }
-
-
-
-  .education {
-    margin-top: -80px;
+  #contact {
+    height: 815px;
   }
 
 }
@@ -1550,22 +1586,23 @@ footer p {
   }
 
   .title2 {
-    margin: 86px auto 0 auto;
+    margin: 20vh auto 0;
   }
 
   .hanger {
-    height: 150px;
+    height: 30vh;
   }
 
   #triptico {
     top: 60px;
     bottom: 60px;
     right: 75px;
-    width: 260px;
+    width: 280px;
   }
 
   .about {
     margin-left: 70px;
+    width: 115%;
   }
 
   .title3 {
@@ -1576,8 +1613,14 @@ footer p {
     width: 450px;
   }
 
-  #social-media {
-    margin: 100px auto 0;
+  #social-media, #resumePdf {
+    margin: 3vh auto 0;
+  }
+  #resumePdf li {
+    margin: 0 5px;
+  }
+  #footer {
+    margin: 20px 0 0;
   }
 
   .title5 {
@@ -1590,11 +1633,10 @@ footer p {
 
   .title7 {
     width: 860px;
-    top: 1050px;
   }
 
   .home-mast.latest {
-    margin: 200px 15px 0;
+    margin: 220px 15px 0;
   }
 
   .home-mast.oldest {
@@ -1608,19 +1650,30 @@ footer p {
   }
 
   .title6 {
-    width: 920px;
+    width: 875px;
   }
 
   .education {
-    margin-top: -80px;
+    margin-top: 10px;
+    width: 112%;
   }
+
+  .title7 {
+    width: 810px;
+  }
+
+  .hobbies {
+    padding-left: 20px;
+    width: 132%;
+  }
+
+  #contact {
+    height: 765px;
+  }
+
 }
 
 @media only screen and (min-width: 1440px) {
-
-  #contact {
-    height: 810px;
-  }
 
   .title2 {
     margin: 140px auto 0 auto;
@@ -1640,11 +1693,11 @@ footer p {
     bottom: auto;
     right: 60px;
     width: 300px;
-    height: 90vh;
+    height: 88vh;
   }
 
   #social-media {
-    margin: 20vh auto 0;
+    margin: 15vh auto 0;
   }
 
   #resumePdf {
@@ -1653,6 +1706,7 @@ footer p {
 
   .about {
     margin-left: 70px;
+    width: 107%;
   }
 
   .title3 {
@@ -1668,16 +1722,22 @@ footer p {
   }
 
   .education {
-    margin-top: -80px;
+    margin-top: 10px;
+    width: 107%;
   }
 
   .title7 {
     width: 900px;
-    top: 1030px;
+    top: 1050px;
+  }
+
+  .hobbies {
+    padding-left: 20px;
+    width: 127%;
   }
 
   .home-mast.latest {
-    margin: 240px 15px 0;
+    margin: 210px 15px 0;
   }
 
   .home-mast.oldest {
@@ -1687,6 +1747,10 @@ footer p {
 
   .frame {
     margin: 375px auto 120px;
+  }
+
+  #contact {
+    height: 810px;
   }
 }
 
@@ -1727,11 +1791,11 @@ footer p {
   }
 
   #social-media {
-    margin: 7vh auto 0;
+    margin: 5vh auto 0;
   }
 
   #resumePdf {
-    margin: 50px auto 0;
+    margin: 20px auto 0;
   }
 
   .about {
@@ -1777,19 +1841,19 @@ footer p {
   }
 
   .frame {
-    margin: 350px auto 64px;
+    margin: 310px auto 0;
   }
 }
 
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1920px) {
   #triptico {
-    top: 10vh;
+    top: 7vh;
     bottom: auto;
-    height: 80vh;
+    height: 86vh;
     right: 14vw;
   }
   #social-media {
-    margin: 21vh auto 0;
+    margin: 27vh auto 0;
   }
 }
 
@@ -1801,6 +1865,6 @@ footer p {
     right: 22vw;
   }
   #resumePdf {
-    margin: 28vh auto 0;
+    margin: 22vh auto 0;
   }
 }
