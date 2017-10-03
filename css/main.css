@@ -139,7 +139,7 @@ p {
   position: relative;
   display: block;
   z-index: 990;
-  height: 765px;
+  height: 96.5vh;
   overflow: hidden;
   width: 100%;
 }
@@ -152,7 +152,7 @@ p {
   color: #000;
   z-index: 989;
   box-shadow: 0 5px 20px #222;
-  height: 1560px;
+  height: auto;
 }
 
 #work {
@@ -160,13 +160,13 @@ p {
   overflow: hidden;
   background-color: #B6E0FF;
   z-index: 988;
-  height: 765px;
+  height: 96.5vh;
   box-shadow: 0 5px 20px #222;
 }
 
 #contact {
   position: relative;
-  height: 765px;
+  height: 96.5vh;
   overflow: hidden;
   background-color: #79BD8F;
   background-color: #BEEB9F;
@@ -234,14 +234,14 @@ p {
   color: #444;
   width: 35vw;
   padding: 8px;
-  margin: 95px auto 0 auto;
+  margin: 16vh auto 0 auto;
   left: 0;
   right: 0;
   z-index: 100;
 }
 
 .hanger {
-  height: 150px;
+  height: 25vh;
   position: absolute;
   width: 1px;
   border: 1px solid #444;
@@ -269,15 +269,11 @@ p {
 /*NAVIGATION TRIPTICO*/
 
 #triptico {
-  top: 60px;
+  top: 7vh;
   right: 80px;
-  bottom: 60px;
+  bottom: 7vh;
   width: 320px;
-  min-height: 600px;
-
-  /*height: 80vh;
-  top: 10vh;
-  bottom: 10vh;*/
+  height: 86vh;
 
   position: fixed;
   box-shadow: 2px 2px 15px #888;
@@ -866,9 +862,11 @@ a {
 
 .home-mast.latest {
   display: inline-block;
-  height: 200px;
-  width: 275px;
+  /*height: 200px;*/
+  height: 22vh;
+  width: 250px;
   margin: 210px 15px 0;
+  margin: 28vh 1.5vw 0;
 }
 
 .home-mast__container.main-three {
@@ -882,9 +880,10 @@ a {
 }
 
 .home-mast.oldest {
-  height: 180px;
+  height: 21vh;
   width: 90%;
   margin: 102px auto;
+  margin: 10vh auto auto;
   box-shadow: 5px 5px 10px #888;
 }
 
@@ -992,8 +991,8 @@ a {
 
 .frame{
 	width: 600px;
-	height: 350px;
-	margin: 350px auto 94px;
+	height: 40vh;
+	margin: 40vh auto 94px;
 	position: relative;
 	background: #435d77;
 	border-radius:0 0 40px 40px;
@@ -1104,7 +1103,7 @@ a {
 
 
 ::-moz-placeholder{color: #2c3e50;font-family: 'Quattrocento Sans';font-size: 20px; opacity: 0.7;}
-::-webkit-input-placeholder {color: #2c3e50; font-family: 'Quattrocento Sans';font-size: 14px; opacity: 0.7;}
+::-webkit-input-placeholder {color: #2c3e50; font-family: 'Quattrocento Sans';font-size: 20px; opacity: 0.7;}
 *:focus {outline: none;}
 
 
@@ -1456,31 +1455,24 @@ footer p {
 
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
 
   .content {
-    margin-top: 170px;
-    margin-left: -50px;
+    margin-top: 32vh;
+    margin-left: -80px;
   }
 
   .title1 {
     width: 210px;
   }
 
-  .title2 {
-    margin: 16vh auto 0;
-  }
-
-  .hanger {
-    height: 25vh;
+  .face .designer .description, .face .coder .description {
+    margin-top: -15vh;
   }
 
   #triptico {
-    top: 6vh;
-    bottom: auto;
-    right: 75px;
+    right: 3.5vw;
     width: 260px;
-    height: 85vh;
   }
 
   #social-media {
@@ -1536,7 +1528,8 @@ footer p {
   }
 
   .title6 {
-    width: 800px;
+    top: 570px;
+    width: 750px;
   }
 
   .education {
@@ -1546,154 +1539,174 @@ footer p {
   }
 
   .title7 {
-    width: 750px;
-    top: 1050px;
+    width: 730px;
+    top: 1110px;
   }
 
   .hobbies {
-    padding-left: 20px;
-    width: 142%;
+    padding-left: 50px;
+    width: 130%;
   }
 
   .home-mast.latest {
-    width: 240px;
-    height: 160px;
-    margin: 220px 18px 0;
+    width: 220px;
+    height: 18vh;
+    margin: 28vh 1vh 0;
   }
 
   .home-mast.oldest {
-    height: 140px;
-    width: 80%;
-    margin: 120px auto;
+    height: 18vh;
+    width: 85%;
+    margin: 15vh auto auto;
   }
 
+  .skills {
+    margin: 150px auto 80px 70px
+  }
+
+  .skill-bar {
+    margin: 29px 0;
+  }
   .frame {
-    margin: 365px auto 70px;
-  }
-
-  #contact {
-    height: 815px;
+    height: 35vh;
   }
 
 }
 
+@media only screen and (min-width: 1280px) {
+  #social-media {
+    margin: 12vh auto 0;
+  }
+  .content {
+    /*margin-top: 25vh;*/
+    margin-left: -50px;
+  }
+  .face .designer .description, .face .coder .description {
+    margin-top: -8vh;
+  }
+  .title6 {
+    top: 530px;
+    width: 760px;
+  }
+  .title7 {
+    width: 750px;
+    top: 1070px;
+  }
+  .hobbies {
+    padding-left: 30px;
+    width: 137%;
+  }
+  .skills {
+    margin: 130px auto 80px 70px
+  }
+  .skill-bar {
+    margin: 19px 0;
+  }
+  .title8 {
+    margin-top: 90px;
+  }
+  .home-mast.latest {
+    margin: 28vh 2vh 0;
+  }
+
+}
 
 @media only screen and (min-width: 1366px) {
 
   .content {
-    margin-top: 170px;
+    margin-top: 22vh;
     margin-left: -20px;
   }
 
-  .title2 {
-    margin: 20vh auto 0;
-  }
-
-  .hanger {
-    height: 30vh;
-  }
-
   #triptico {
-    top: 60px;
-    bottom: 60px;
+    /*top: 60px;
+    bottom: 60px;*/
     right: 75px;
     width: 280px;
   }
 
-  .about {
-    margin-left: 70px;
-    width: 115%;
+  #social-media li, #resumePdf li {
+    font-size: 16px;
   }
-
-  .title3 {
-    width: 900px;
+  #social-media li a, #resumePdf li a {
+    font-size: 1.8em;
   }
-
-  .title4 {
-    width: 450px;
+  #social-media {
+    margin: 6vh auto 0;
   }
-
-  #social-media, #resumePdf {
+  #resumePdf {
     margin: 3vh auto 0;
   }
   #resumePdf li {
     margin: 0 5px;
   }
+  #resumePdf li:first-child {
+    display: inline-block;
+  }
   #footer {
     margin: 20px 0 0;
   }
-
+  .about {
+    margin-left: 70px;
+    width: 115%;
+  }
+  .title3 {
+    width: 900px;
+  }
+  .title4 {
+    width: 450px;
+  }
   .title5 {
     width: 420px;
   }
-
   .skills {
     margin: 130px auto 100px 70px;
   }
-
-  .title7 {
-    width: 860px;
-  }
-
-  .home-mast.latest {
-    margin: 220px 15px 0;
-  }
-
-  .home-mast.oldest {
-    height: 180px;
-    margin: 95px auto;
-    width: 85%;
-  }
-
-  .frame {
-    margin: 357px auto 60px;
-  }
-
   .title6 {
     width: 875px;
   }
-
+  .title7 {
+    width: 810px;
+    top: 1050px;
+  }
   .education {
     margin-top: 10px;
     width: 112%;
   }
-
-  .title7 {
-    width: 810px;
-  }
-
   .hobbies {
     padding-left: 20px;
     width: 132%;
   }
-
-  #contact {
-    height: 765px;
+  .title8 {
+    margin-top: 60px;
+  }
+  .frame {
+    margin: 45vh auto 94px;
   }
 
 }
 
 @media only screen and (min-width: 1440px) {
 
-  .title2 {
+  /*.title2 {
     margin: 140px auto 0 auto;
   }
 
   .hanger {
     height: 200px;
-  }
+  }*/
 
   .content {
-    /*margin-top: 170px;*/
+    margin-top: 30vh;
     margin-left: 0;
   }
 
   #triptico {
-    top: 5vh;
+    /*top: 5vh;
     bottom: auto;
+    height: 88vh;*/
     right: 60px;
     width: 300px;
-    height: 88vh;
   }
 
   #social-media {
@@ -1736,22 +1749,19 @@ footer p {
     width: 127%;
   }
 
-  .home-mast.latest {
+  /*.home-mast.latest {
     margin: 210px 15px 0;
   }
 
   .home-mast.oldest {
     height: 200px;
     width: 85%;
-  }
+  }*/
 
-  .frame {
+  /*.frame {
     margin: 375px auto 120px;
-  }
+  }*/
 
-  #contact {
-    height: 810px;
-  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -1760,34 +1770,22 @@ footer p {
     max-width: 1527px;
   }
 
-  #contact {
-    height: 765px;
-  }
-
   .container-fluid {
     padding-left: 28px;
     padding-right: 28px;
   }
 
-  .title2 {
-    margin: 120px auto 0 auto;
-  }
-
-  .hanger {
-    height: 180px;
-  }
-
   .content {
-    /*margin-top: 170px;*/
+    margin-top: 25vh;
     margin-left: 0;
   }
 
   #triptico {
-    bottom: 60px;
-    top: 60px;
     right: 58px;
+    /*bottom: 60px;
+    top: 60px;
+    height: auto;*/
     width: 342px;
-    height: auto;
   }
 
   #social-media {
@@ -1820,7 +1818,7 @@ footer p {
   }
 
   .title7 {
-    width: 950px;
+    width: 920px;
     top: 1050px;
   }
 
@@ -1830,7 +1828,7 @@ footer p {
     width: 120%;
   }
 
-  .home-mast.latest {
+  /*.home-mast.latest {
     margin: 220px 15px 0;
   }
 
@@ -1838,31 +1836,179 @@ footer p {
     height: 180px;
     margin: 104px auto;
     width: 80%;
-  }
+  }*/
 
-  .frame {
+  /*.frame {
     margin: 310px auto 0;
+  }*/
+}
+
+@media only screen and (min-width: 1750px) {
+  .content {
+    margin-top: 30vh;
+  }
+  #triptico {
+    right: 9vw;
+  }
+  .title1 {
+    top: 8vh;
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1900px) {
+  p {
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  #home, #resume, #work, #contact {
+    max-width: 90%;
+  }
   #triptico {
-    top: 7vh;
-    bottom: auto;
-    height: 86vh;
-    right: 14vw;
+    right: 10vw;
+    width: 350px;
+  }
+  #triptico .top-section {
+    height: 300px;
+  }
+  svg {
+    width: 150px;
+    height: 150px;
+  }
+  #triptico .bottom-section ul#myMenu {
+    font-size: 30px;
+  }
+  #triptico .bottom-section ul#myMenu li {
+    padding: 10px 0 0;
+    margin: 9px 0;
+  }
+  #triptico .bottom-section ul#myMenu li a, #triptico .bottom-section ul#myMenu li a:hover, .actived {
+    border-radius: 20px;
   }
   #social-media {
-    margin: 27vh auto 0;
+    margin: 17vh auto 0;
+  }
+  #social-media li, #resumePdf li {
+    font-size: 20px;
+  }
+  #social-media li a, #resumePdf li a {
+    font-size: 2.2em;
+  }
+  #footer {
+    margin: 40px 0 0;
+  }
+  .content {
+    margin-top: 47vh;
+  }
+  .face .designer .description {
+    margin-left: 60px;
+  }
+  .face .coder .description {
+    margin-right: 80px;
+  }
+  .face .coder h1, .face .designer h1 {
+    font-size: 70px;
+    font-size: 7rem;
+  }
+  .face .coder p, .face .designer p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.8em;
+  }
+  .face .designer .description, .face .coder .description {
+    margin-top: -15vh;
+  }
+  .title1 p {
+    font-size: 40px;
+  }
+  .title3 p, .title4 p, .title5 p, .title6 p, .title7 p, .title8 p, .title9 p {
+    font-size: 36px;
+  }
+  .title2 {
+    width: 40vw;
+  }
+  .title2 h1 {
+    font-size: 48px;
+  }
+  .title2 h1 span {
+    font-size: 64px;
+  }
+  .about {
+    margin-left: 120px;
+    margin-top: 200px;
+  }
+  .title3 {
+    width: 1100px;
+  }
+  .experience h5, .education h5 {
+    font-size: 18px;
+  }
+  .title4 {
+    width: 560px;
+  }
+  .skills {
+    width: 110%;
+    margin: 140px auto 100px 120px;
+  }
+  .skill-bar {
+    margin: 22px 0;
+  }
+  .title5 {
+    width: 500px;
+  }
+  .title6 {
+    top: 640px;
+  }
+  .education {
+    margin-top: -50px;
+    margin-left: 70px;
+  }
+  .education p span {
+    font-size: 16px;
+  }
+  .title7 {
+    top: 1280px;
+    width: 980px;
+  }
+  .hobbies {
+    width: 126%;
+    padding-left: 60px;
+  }
+  .title8 {
+    margin-top: 120px;
+  }
+  .home-mast.latest {
+    width: 275px;
+    margin: 28vh 3vh 0;
+  }
+  .title9 {
+    margin-top: 90px;
+    width: 600px;
+  }
+  .frame {
+    height: 28vh;
+  }
+  #button_open_envelope {
+    width: 240px;
+    left: 180px;
+  }
+  #button_open_envelope h1 {
+    font-size: 32px;
+  }
+  .form input.input-md, .form select.input-md {
+    font-size: 20px;
+  }
+  .btn-coffee {
+    font-size: 20px;
+    border-radius: 20px;
   }
 }
 
 @media only screen and (min-width: 2560px) {
   #triptico {
-    top: 5vh;
-    height: 90vh;
-    bottom: auto;
     right: 22vw;
+    /*top: 5vh;
+    height: 90vh;
+    bottom: auto;*/
   }
   #resumePdf {
     margin: 22vh auto 0;

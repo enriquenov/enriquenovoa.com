@@ -558,20 +558,25 @@
 			// init controller2 for Menu links
 			var controller2 = new ScrollMagic.Controller();
 
+			var homeDuration = $('#home').height();
+			var resumeDuration = $('#resume').height();
+			var workDuration = $('#work').height();
+			var contactDuration = $('#contact').height();
+
 			// build scenes
-			new ScrollMagic.Scene({triggerElement: "#home", duration: 765})
+			new ScrollMagic.Scene({triggerElement: "#home", duration: homeDuration})
 							.setClassToggle("#high1", "actived") // add class toggle
 							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
-			new ScrollMagic.Scene({triggerElement: "#resume", duration: 1560})
+			new ScrollMagic.Scene({triggerElement: "#resume", duration: resumeDuration})
 							.setClassToggle("#high2", "actived") // add class toggle
 							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
-			new ScrollMagic.Scene({triggerElement: "#work", duration: 765})
+			new ScrollMagic.Scene({triggerElement: "#work", duration: workDuration})
 							.setClassToggle("#high3", "actived") // add class toggle
 							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
-			new ScrollMagic.Scene({triggerElement: "#contact"})
+			new ScrollMagic.Scene({triggerElement: "#contact", duration: contactDuration})
 							.setClassToggle("#high4", "actived") // add class toggle
 							// .addIndicators() // add indicators (requires plugin)
 							.addTo(controller2);
@@ -695,8 +700,6 @@
 					$('#face').resizeFace();
 
 			});
-
-
 
 
 		});
