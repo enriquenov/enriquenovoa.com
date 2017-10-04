@@ -285,18 +285,18 @@ p {
 #triptico .top-section, #triptico .bottom-section {
   border: none;
   margin: 0;
-  /*padding: 0;*/
+  padding: 0;
   outline: 0;
   width: 100%;
 }
 
 #triptico .top-section {
-  height: 250px;
+  height: 30vh;
   background-color: #00ADA7;
 }
 
 #triptico .bottom-section {
-  height: auto;
+  height: 56vh;
   text-align: right;
   font-family: 'Quattrocento Sans';
 }
@@ -304,9 +304,10 @@ p {
 
 #triptico .bottom-section ul#myMenu {
   margin: 0 auto;
-  padding-top: 20px;
-  width: 70%;
+  padding-top: 1vh;
+  width: 80%;
   font-size: 18px;
+  font-size: 2.3vh;
   font-weight: 500;
 }
 
@@ -324,7 +325,7 @@ p {
 
 #triptico .bottom-section ul#myMenu li a {
   border-radius: 15px;
-  padding: 5px 15px;
+  padding: 0.6vh 1.8vh;
   text-decoration: none;
 }
 
@@ -343,21 +344,30 @@ p {
   transition: all .2s ease-in-out;
 }
 
-
-#social-media, #resumePdf {
+#social-media {
   text-align: center;
-  margin: 100px auto 0;
+  margin: 5vh auto 0;
+}
+
+#resumePdf {
+  text-align: center;
+  margin: 0 auto;
 }
 
 #social-media li, #resumePdf li {
   display: inline-block;
   border-top: none;
   margin: 0 20px;
-  font-size: 14px;
+  font-size: 2.3vh;
+}
+
+#resumePdf li {
+  margin: 1.5vh auto;
+  display: block;
 }
 
 #social-media li a, #resumePdf li a {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 #social-media li a:hover, #resumePdf li a:hover {
@@ -368,9 +378,13 @@ p {
 #footer {
   text-align: center;
   width: 100%;
-  margin: 30px 0 0 0;
+  margin: 4vh 0 0;
   bottom: 0;
   cursor: default;
+}
+
+#footer p {
+  font-size: 2vh;
 }
 
 
@@ -1370,10 +1384,6 @@ footer p {
 
 
 
-
-
-
-
 /**** Transitions ****/
 .transitions-enabled.masonry,
 .transitions-enabled.masonry .masonry-brick {
@@ -1470,28 +1480,6 @@ footer p {
     margin-top: -15vh;
   }
 
-  #triptico {
-    right: 3.5vw;
-    width: 260px;
-  }
-
-  #social-media {
-    margin: 12vh auto 0;
-  }
-
-  #resumePdf {
-    margin: 4vh auto 0;
-  }
-
-  #social-media li, #resumePdf li {
-    margin: 0 15px;
-  }
-
-  #resumePdf li:first-child {
-    display: block;
-    padding-bottom: 15px;
-  }
-
   .face .designer .description {
     margin-left: 110px;
   }
@@ -1565,7 +1553,7 @@ footer p {
   }
 
   .skill-bar {
-    margin: 29px 0;
+    margin: 22px 0;
   }
   .frame {
     height: 35vh;
@@ -1574,9 +1562,6 @@ footer p {
 }
 
 @media only screen and (min-width: 1280px) {
-  #social-media {
-    margin: 12vh auto 0;
-  }
   .content {
     /*margin-top: 25vh;*/
     margin-left: -50px;
@@ -1617,34 +1602,9 @@ footer p {
     margin-top: 22vh;
     margin-left: -20px;
   }
-
   #triptico {
-    /*top: 60px;
-    bottom: 60px;*/
     right: 75px;
     width: 280px;
-  }
-
-  #social-media li, #resumePdf li {
-    font-size: 16px;
-  }
-  #social-media li a, #resumePdf li a {
-    font-size: 1.8em;
-  }
-  #social-media {
-    margin: 6vh auto 0;
-  }
-  #resumePdf {
-    margin: 3vh auto 0;
-  }
-  #resumePdf li {
-    margin: 0 5px;
-  }
-  #resumePdf li:first-child {
-    display: inline-block;
-  }
-  #footer {
-    margin: 20px 0 0;
   }
   .about {
     margin-left: 70px;
@@ -1680,8 +1640,11 @@ footer p {
   .title8 {
     margin-top: 60px;
   }
+  .title9 {
+    width: 580px;
+  }
   .frame {
-    margin: 45vh auto 94px;
+    margin: 38vh auto 94px;
   }
 
 }
@@ -1702,19 +1665,8 @@ footer p {
   }
 
   #triptico {
-    /*top: 5vh;
-    bottom: auto;
-    height: 88vh;*/
     right: 60px;
     width: 300px;
-  }
-
-  #social-media {
-    margin: 15vh auto 0;
-  }
-
-  #resumePdf {
-    margin: 40px auto 0;
   }
 
   .about {
@@ -1748,6 +1700,9 @@ footer p {
     padding-left: 20px;
     width: 127%;
   }
+  .title8 {
+    margin-top: 90px;
+  }
 
   /*.home-mast.latest {
     margin: 210px 15px 0;
@@ -1758,9 +1713,9 @@ footer p {
     width: 85%;
   }*/
 
-  /*.frame {
-    margin: 375px auto 120px;
-  }*/
+  .frame {
+    margin: 42vh auto 94px;
+  }
 
 }
 
@@ -1782,18 +1737,7 @@ footer p {
 
   #triptico {
     right: 58px;
-    /*bottom: 60px;
-    top: 60px;
-    height: auto;*/
     width: 342px;
-  }
-
-  #social-media {
-    margin: 5vh auto 0;
-  }
-
-  #resumePdf {
-    margin: 20px auto 0;
   }
 
   .about {
@@ -1867,37 +1811,8 @@ footer p {
     right: 10vw;
     width: 350px;
   }
-  #triptico .top-section {
-    height: 300px;
-  }
-  svg {
-    width: 150px;
-    height: 150px;
-  }
-  #triptico .bottom-section ul#myMenu {
-    font-size: 30px;
-  }
-  #triptico .bottom-section ul#myMenu li {
-    padding: 10px 0 0;
-    margin: 9px 0;
-  }
-  #triptico .bottom-section ul#myMenu li a, #triptico .bottom-section ul#myMenu li a:hover, .actived {
-    border-radius: 20px;
-  }
-  #social-media {
-    margin: 17vh auto 0;
-  }
-  #social-media li, #resumePdf li {
-    font-size: 20px;
-  }
-  #social-media li a, #resumePdf li a {
-    font-size: 2.2em;
-  }
-  #footer {
-    margin: 40px 0 0;
-  }
   .content {
-    margin-top: 47vh;
+    margin-top: 38vh;
   }
   .face .designer .description {
     margin-left: 60px;
@@ -2006,11 +1921,6 @@ footer p {
 @media only screen and (min-width: 2560px) {
   #triptico {
     right: 22vw;
-    /*top: 5vh;
-    height: 90vh;
-    bottom: auto;*/
   }
-  #resumePdf {
-    margin: 22vh auto 0;
-  }
+
 }
