@@ -263,18 +263,16 @@ p {
   font-family: "Julius Sans One";
 }
 
-
 /*TITLES END */
 
 /*NAVIGATION TRIPTICO*/
 
 #triptico {
   top: 7vh;
-  right: 80px;
-  bottom: 7vh;
-  width: 320px;
+  /*right: 80px;*/
+  bottom: auto;
+  width: 21.8%;
   height: 86vh;
-
   position: fixed;
   box-shadow: 2px 2px 15px #888;
   box-shadow: 3px 5px 15px #222;
@@ -1603,8 +1601,8 @@ footer p {
     margin-left: -20px;
   }
   #triptico {
-    right: 75px;
-    width: 280px;
+    /*right: 75px;*/
+    /*width: 280px;*/
   }
   .about {
     margin-left: 70px;
@@ -1665,8 +1663,8 @@ footer p {
   }
 
   #triptico {
-    right: 60px;
-    width: 300px;
+    /*right: 60px;*/
+    /*width: 300px;*/
   }
 
   .about {
@@ -1736,8 +1734,15 @@ footer p {
   }
 
   #triptico {
-    right: 58px;
-    width: 342px;
+    width: 335px;
+  }
+
+  .tripticoContainer {
+    width: 1527px;
+  }
+
+  .title2 {
+    width: 560px;
   }
 
   .about {
@@ -1792,7 +1797,7 @@ footer p {
     margin-top: 30vh;
   }
   #triptico {
-    right: 9vw;
+    /*right: 9vw;*/
   }
   .title1 {
     top: 8vh;
@@ -1804,15 +1809,19 @@ footer p {
     font-size: 20px;
     line-height: 1.6em;
   }
-  #home, #resume, #work, #contact {
-    max-width: 90%;
+  #home, #work, #contact {
+    height: 1000px;
+  }
+  #resume {
+    height: auto;
   }
   #triptico {
-    right: 10vw;
-    width: 350px;
+    max-height: 1000px;
+    /*right: 10vw;*/
+    /*width: 350px;*/
   }
   .content {
-    margin-top: 38vh;
+    margin-top: 400px;
   }
   .face .designer .description {
     margin-left: 60px;
@@ -1838,7 +1847,7 @@ footer p {
   .title3 p, .title4 p, .title5 p, .title6 p, .title7 p, .title8 p, .title9 p {
     font-size: 36px;
   }
-  .title2 {
+  /*.title2 {
     width: 40vw;
   }
   .title2 h1 {
@@ -1846,7 +1855,7 @@ footer p {
   }
   .title2 h1 span {
     font-size: 64px;
-  }
+  }*/
   .about {
     margin-left: 120px;
     margin-top: 200px;
@@ -1920,7 +1929,7 @@ footer p {
 
 @media only screen and (min-width: 2560px) {
   #triptico {
-    right: 22vw;
+    /*right: 22vw;*/
   }
 
 }
