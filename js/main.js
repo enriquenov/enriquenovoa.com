@@ -1,3 +1,163 @@
+$(document).ready(function() {
+
+	// OPEN ENVELOPE
+	$('.frame').click(function(){
+		$('.topEnv').addClass('open');
+		$('.message').addClass('pull');
+	})
+
+	// Init smooth-scroll
+	var scroll = new SmoothScroll('a[href*="#"]');
+
+	// init controller2 for Menu links
+	var controller2 = new ScrollMagic.Controller();
+
+	var homeDuration = $('#home').height();
+	var resumeDuration = $('#resume').height();
+	var workDuration = $('#work').height();
+	var contactDuration = $('#contact').height();
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#home", duration: homeDuration})
+					.setClassToggle("#high1", "actived") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+	new ScrollMagic.Scene({triggerElement: "#resume", duration: resumeDuration})
+					.setClassToggle("#high2", "actived") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+	new ScrollMagic.Scene({triggerElement: "#work", duration: workDuration})
+					.setClassToggle("#high3", "actived") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+	new ScrollMagic.Scene({triggerElement: "#contact", duration: contactDuration})
+					.setClassToggle("#high4", "actived") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+
+
+	// Init ScrollMagic
+	var controller = new ScrollMagic.Controller();
+
+	//loop through slewTops
+	$('.skewTop').each(function(){
+		// Build a scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.8,
+			reverse: false
+		})
+		.setClassToggle(this, 'slideInLeft')
+		// .addIndicators({
+		// 	name: 'slide in left',
+		// 	colorTrigger: 'green',
+		// 	indent: 60,
+		// 	colorStart: 'red'
+		// })
+		.addTo(controller);
+	});
+
+	//loop through slewBottoms
+	$('.skewBottom').each(function(){
+		// Build a scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.8,
+			reverse: false
+		})
+		.setClassToggle(this, 'slideInRight')
+		.addTo(controller);
+	});
+
+	//loop through skillsBar
+	$('.skill').each(function(){
+		// Build a scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.9,
+			reverse: false
+		})
+		.setClassToggle(this, 'html')
+		.addTo(controller);
+	});
+
+	//loop through skillsBar2
+	$('.skill2').each(function(){
+		// Build a scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.9,
+			reverse: false
+		})
+		.setClassToggle(this, 'css')
+		.addTo(controller);
+	});
+
+	//loop through skillsBar3
+	$('.skill3').each(function(){
+		// Build a scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.9,
+			reverse: false
+		})
+		.setClassToggle(this, 'javascript')
+		.addTo(controller);
+	});
+
+	//loop through content divs
+	$('.contAnimated').each(function(){
+		// Build a scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.8,
+			reverse: false
+		})
+		.setClassToggle(this, 'fadeInUp')
+		// .addIndicators({
+		// 	name: 'slide in right',
+		// 	colorTrigger: 'blue',
+		// 	indent: 60,
+		// 	colorStart: 'purple'
+		// })
+		.addTo(controller);
+	});
+
+	// CHANGE CLASS ON TIMELINE HOVER
+	$('.fa.fa-circle-o').hover(function(){
+		$(this).toggleClass('fa-circle');
+		$(this).toggleClass('fa-circle-o');
+	});
+
+	// Hide browser top bar in mobiles
+	$('body').scrollTop(1);
+
+	// Function to scroll to top
+	$('a[href=#top]').click(function(){
+
+				$('html, body').animate({scrollTop:0}, 1000, 'easeInOutQuad');
+				return false;
+		});
+
+	// Function to fade in image sprites
+		$('.sprite').fadeSprite();
+
+	// Preload the page with jPreLoader
+	$('body').jpreLoader({
+
+		showSplash: true
+
+	}, function() {
+
+		//Show the page once images are loaded
+			$('#face').animateHome();
+			$('#face').resizeFace();
+
+	});
+});
+
+
+
 /*
 * hoverFlow - A Solution to Animation Queue Buildup in jQuery
 * Version 1.00

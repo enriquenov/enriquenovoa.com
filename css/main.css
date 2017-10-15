@@ -131,6 +131,11 @@ p {
   cursor: default;
 }
 
+.row {
+  clear: both;
+  margin: 0 auto;
+}
+
 /* Sections */
 
 #home {
@@ -501,6 +506,9 @@ a {
 }
 
 @media only screen and (min-width: 321px) {
+  .face .coder .description {
+    text-align: center;
+  }
   .face .coder h1,
   .face .designer h1 {
     font-size: 26px;
@@ -554,7 +562,7 @@ a {
 @media only screen and (min-width: 860px) {
   .face .coder,
   .face .designer {
-    width: 30%;
+    width: 25%;
     height: 30%;
   }
   .face .coder h1,
@@ -564,8 +572,8 @@ a {
   }
   .face .coder p,
   .face .designer p {
-    font-size: 17px;
-    font-size: 1.7rem;
+    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -575,12 +583,18 @@ a {
   }
   .face .coder h1,
   .face .designer h1 {
-    font-size: 50px;
-    font-size: 5rem;
+    font-size: 40px;
+    font-size: 4rem;
   }
   .face .coder .more,
   .face .designer .more {
     display: inline;
+  }
+  .face .coder {
+    margin-right: 40px;
+  }
+  .face .designer {
+    margin-left: 50px;
   }
 }
 @media only screen and (min-width: 1140px) {
@@ -626,7 +640,6 @@ a {
     right: 0px;
   }
   .face .coder .description {
-    text-align: center;
     right: 0px;
     margin-right: 70px;
   }
@@ -1449,14 +1462,104 @@ footer p {
 @media only screen and (min-width: 1024px) {
 
   p {
-    line-height: 1.4em;
+    font-size: 14px;
   }
 
-  .row {
-    clear: both;
-    /*max-width: 1040px;*/
-    margin: 0 auto;
+  .content {
+    margin-top: 27vh;
   }
+
+  .title1 {
+    width: 200px;
+  }
+
+  .title1 p {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  .title2 {
+    width: 32vw;
+  }
+
+  .title2 h1 {
+    font-size: 24px;
+    margin: 8px auto 5px;
+  }
+
+  .title2 h1 span {
+    font-size: 26px;
+  }
+
+  #triptico {
+    width: 20.8%;
+  }
+
+  #social-media li {
+    margin: 0 15px;
+  }
+
+  #resumePdf li {
+    margin: 1.5vh auto;
+  }
+
+  #footer {
+    margin: 3vh 0 0;
+  }
+  .title3 p, .title4 p, .title5 p, .title6 p, .title7 p, .title8 p, .title9 p {
+    font-size: 24px;
+    padding: 5px 40px;
+  }
+  .title3 {
+    width: 700px;
+    top: 40px;
+  }
+  .experience {
+    margin-top: 30px;
+    width: 140%;
+  }
+  .title4 {
+    width: 350px;
+    top: 80px;
+  }
+  .about {
+    width: 120%;
+    margin-top: 120px;
+    margin-left: 40px;
+  }
+  .about p, .hobbies p {
+    margin-top: 15px;
+  }
+  .title5 {
+    width: 350px;
+    top: 40px;
+  }
+  .skills {
+    margin: 80px auto 80px 40px;
+    width: 120%;
+  }
+  .skill-bar {
+    margin: 12px 0;
+  }
+  .title6 {
+    width: 650px;
+    top: 440px;
+  }
+  .education {
+    width: 140%;
+    margin-left: 20px;
+    margin-top: -80px;
+  }
+  .title7 {
+    width: 590px;
+    top: 880px;
+  }
+  .hobbies {
+    width: 150%;
+    margin: 130px auto 60px;
+  }
+
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -1733,6 +1836,11 @@ footer p {
     margin-left: 0;
   }
 
+  .face .coder p, .face .designer p {
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+
   #triptico {
     width: 335px;
   }
@@ -1810,7 +1918,7 @@ footer p {
     line-height: 1.6em;
   }
   #home, #work, #contact {
-    height: 1000px;
+    height: 939.91px;
   }
   #resume {
     height: auto;
@@ -1820,8 +1928,12 @@ footer p {
     /*right: 10vw;*/
     /*width: 350px;*/
   }
+  #triptico .bottom-section ul#myMenu li a, #triptico .bottom-section ul#myMenu li a:hover, .actived {
+    border-radius: 20px;
+  }
+
   .content {
-    margin-top: 400px;
+    margin-top: 350px;
   }
   .face .designer .description {
     margin-left: 60px;
@@ -1883,7 +1995,7 @@ footer p {
     top: 640px;
   }
   .education {
-    margin-top: -50px;
+    margin-top: -165px;
     margin-left: 70px;
   }
   .education p span {
@@ -1891,7 +2003,7 @@ footer p {
   }
   .title7 {
     top: 1280px;
-    width: 980px;
+    width: 920px;
   }
   .hobbies {
     width: 126%;
@@ -1925,6 +2037,8 @@ footer p {
     font-size: 20px;
     border-radius: 20px;
   }
+
+
 }
 
 @media only screen and (min-width: 2560px) {
