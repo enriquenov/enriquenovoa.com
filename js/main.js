@@ -1,9 +1,26 @@
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 $(document).ready(function() {
+
+	// navbar-collapse on scroll
+
+	$('#navigation-bar').affix({
+	  offset: {
+	    top: 100
+	  }
+	})
 
 	// OPEN ENVELOPE
 	$('.frame').click(function(){
 		$('.topEnv').addClass('open');
 		$('.message').addClass('pull');
+		$('#button_open_envelope').addClass('gone');
+		$('.title9').addClass('newWidth')
+		$('.title9').html('<p>=)</p>');
 	})
 
 	// Init smooth-scroll

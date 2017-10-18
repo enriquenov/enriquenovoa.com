@@ -9,9 +9,9 @@
 		<link rel="shortcut icon" href="img/favicon.ico">
 
 		<!-- Latest compiled and minified CSS -->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	  <!-- Optional theme -->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
 
 		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -46,7 +46,6 @@
 
 		<div ng-view> </div>
 
-
 		<!-- TRIPTICO STARTS  -->
 		<div class="container-fluid">
 			<nav class="navbar-fixed-top">
@@ -56,7 +55,7 @@
 							<div id="triptico">
 
 								<div class="top-section">
-									<a href="#page1">
+									<a href="#home">
 										<div id="logo">
 											<div class="svg">
 												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -149,6 +148,30 @@
 
 
 			<div id="home" class="row">
+
+				<!-- Fixed navbar -->
+		    <nav id="navigation-bar" class="navbar navbar-default navbar-fixed-top">
+		      <div class="container">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="#">Project name</a>
+		        </div>
+
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav">
+		            <li class="active"><a href="#home">home</a></li>
+		            <li><a href="#resume">resume</a></li>
+		            <li><a href="#work">my work</a></li>
+								<li><a href="#contact">contact</a></li>
+		          </ul>
+		        </div><!--/.nav-collapse -->
+		      </div>
+		    </nav>
 
 				<div class="col-xs-9">
 
@@ -547,19 +570,12 @@
 
 		<!-- <script type="text/javascript" src="js/jquery.fullPage.min.js"></script> -->
 		<script src="js/main.js"></script>
-		<!-- <script type="text/javascript"> -->
-		 <!--
-		//
-		// //If browser is IE8 or older we show IE specific page
-		// // if(ie < 9){
-		// // 	ieMessage();
-		// // }
-		//
-		// /*
-		// * Call functions when dom is ready
-		// */
-		// 		-->
-		<!-- </script> -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 
 	</body>
