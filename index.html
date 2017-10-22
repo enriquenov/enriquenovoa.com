@@ -152,6 +152,7 @@
 				<!-- Fixed navbar -->
 		    <nav id="navigation-bar" class="navbar navbar-default navbar-fixed-top">
 		      <div class="container">
+
 		        <div class="navbar-header">
 		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		            <span class="sr-only">Toggle navigation</span>
@@ -159,21 +160,24 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		          </button>
-		          <a class="navbar-brand" href="#">Project name</a>
+		          <a class="navbar-brand" href="#home">
+								<!-- <div class="brand-image"></div> -->
+								<!-- <img src="img/logo-white.png" alt=""> -->
+							</a>
 		        </div>
 
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav">
-		            <li class="active"><a href="#home">home</a></li>
-		            <li><a href="#resume">resume</a></li>
-		            <li><a href="#work">my work</a></li>
-								<li><a href="#contact">contact</a></li>
+		            <li id="high5"><a href="#home">home</a></li>
+		            <li id="high6"><a href="#resume">resume</a></li>
+		            <li id="high7"><a href="#work">my work</a></li>
+								<li id="high8"><a href="#contact">contact</a></li>
 		          </ul>
 		        </div><!--/.nav-collapse -->
 		      </div>
 		    </nav>
 
-				<div class="col-xs-9">
+				<div class="col-sm-9">
 
 
 					<div class="hanger bounceInDownSwing">
@@ -241,7 +245,7 @@
 			<!-- 2. RESUME  -->
 			<div id="resume" class="row">
 
-				<div class="col-xs-9">
+				<div class="col-sm-9">
 
 					<div class="skewTop title3">
 						<p>work experience</p>
@@ -253,7 +257,7 @@
 
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-4">
+							<div class="col-sm-4">
 								<div class="about">
 									<div class="contAnimated">
 										<p>Hello there, this is Enrique!<br><br>I currently work as an Independent Contractor Web Developer.<br><br>I have solid knowledge of JavaScript, HTML5 and CSS3, and I am -very- passionate about building responsive, minimalist and elegant websites.<br><br>I just can't help it. I love what I do, I'm good at it, and I want more!</p>
@@ -266,7 +270,12 @@
 									</div> -->
 								</div>
 							</div>
-							<div class="col-xs-4 col-xs-offset-2">
+
+							<div class="skewTop title3-1">
+								<p>work experience</p>
+							</div>
+
+							<div class="col-sm-4 col-sm-offset-2">
 								<div class="experience contAnimated">
 									<div class="contAnimated">
 										<i class="fa fa-circle-o" aria-hidden="true"></i><h5>Apr 2017 - now</h5>
@@ -292,7 +301,7 @@
 
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-4">
+							<div class="col-sm-4">
 								<div class="skills">
 									<p class="skill-name">HTML5</p>
 		              <div class="skill-bar">
@@ -342,7 +351,7 @@
 								</div>
 							</div>
 
-							<div class="col-xs-4 col-xs-offset-2">
+							<div class="col-sm-4 col-sm-offset-2">
 								<div class="education">
 									<div class="contAnimated">
 										<i class="fa fa-circle-o" aria-hidden="true"></i><h5>Mar 2017 - now</h5>
@@ -360,7 +369,7 @@
 							</div>
 
 
-							<div class="col-xs-4 col-xs-offset-2">
+							<div class="col-sm-4 col-sm-offset-2">
 								<div class="hobbies">
 									<div class="contAnimated">
 										<p>One of my biggest passions is learning.<br>I know, I'm weird.<br><br>From playing musical instruments, to cooking. From learning languages -including coding-, to graphic designing. Or, from traveling around the world, to always trying new things. I just love to feed myself with new knowledge everyday.<br><br>Ps.: I also love swimming, puppies, and Peruvian food!</p>
@@ -379,7 +388,7 @@
 
 				</div>
 
-				<div class="col-xs-3">
+				<div class="col-sm-3">
 
 					<div class="skewBottom title6">
 						<p>education</p>
@@ -396,7 +405,7 @@
 
 			<div id="work" class="row">
 
-				<div class="col-xs-9 left">
+				<div class="col-sm-9 left">
 
 					<div class="skewTop title8">
 						<p>latest work</p>
@@ -479,7 +488,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-3"></div>
+				<div class="col-sm-3"></div>
 
 			</div>
 
@@ -487,7 +496,7 @@
 
 			<div id="contact" class="row">
 
-				<div class="col-xs-9 left">
+				<div class="col-sm-9 left">
 
 					<div class="skewTop title9">
 						<p>want to get
@@ -508,8 +517,6 @@
 				          message me
 				        </h1>
 				      </div>
-
-
 
 				      <div class="message">
 								<form id="contact-form" class="form form-contact">
@@ -536,11 +543,59 @@
 				      <div class = "topEnv"></div>
 				    </div>
 
+						<div id="contact-form2">
+							<div class="message">
+								<form id="contact-form" class="form form-contact">
+									<div class="col-md-12">
+										<input id="input-name" name="name" type="text" placeholder="Name*" required class="form-control input-md">
+									</div>
+									<div class="col-md-12">
+										<input id="input-email" name="email" type="email" placeholder="Email*" required class="form-control input-md">
+									</div>
+									<div class="col-md-12">
+										<textarea id="input-message" name="message" placeholder="Message*" required class="form-control input-md"></textarea>
+									</div>
+									<div class="col-md-7">
+										<div id="send-result" class="mt-20"></div>
+									</div>
+									<div class="col-md-5">
+										<button id="submit-message" class="btn btn-coffee btn-medium">Send message</button>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div id="contact-info">
+							<ul id="social-media">
+								<li>
+									<a href="https://github.com/enriquenov" target="_blank"><i class="fa fa-github"></i></a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/luis-enrique-novoa-135721117/" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
+								</li>
+								<li>
+									<a href="https://codepen.io/enriquenov/" target="_blank"><i class="fa fa-codepen"></i></a>
+								</li>
+							</ul>
+							<ul id="resumePdf">
+								<li>
+									Download my resume:
+								</li>
+								<li>
+									<a href="enriquenovoa-resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+								</li>
+							</ul>
+
+							<div id="footer">
+								<p>© 2017 Enrique Novoa</p>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
 
-				<div class="col-xs-3"></div>
+				<div class="col-sm-3"></div>
 
 				<!-- <div class="col-xs-12 footer">
 					<footer>
@@ -567,7 +622,6 @@
 		<script src="js/smooth-scroll.min.js"></script>
 		<script src="js/contact-form.js"></script>
 
-
 		<!-- <script type="text/javascript" src="js/jquery.fullPage.min.js"></script> -->
 		<script src="js/main.js"></script>
 
@@ -575,7 +629,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 
 
 	</body>

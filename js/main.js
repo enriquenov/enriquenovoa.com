@@ -1,3 +1,11 @@
+// <ul id="myMenu">
+// 	<li><a id="high1" href="#home"><span>home</span></a></li>
+// 	<li><a id="high2" href="#resume"><span>resume</span></a></li>
+// 	<li><a id="high3" href="#work"><span>my work</span></a></li>
+// 	<li><a id="high4" href="#contact"><span>contact</span></a></li>
+// </ul>
+
+
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
@@ -10,7 +18,7 @@ $(document).ready(function() {
 
 	$('#navigation-bar').affix({
 	  offset: {
-	    top: 100
+	    top: 50
 	  }
 	})
 
@@ -18,6 +26,7 @@ $(document).ready(function() {
 	$('.frame').click(function(){
 		$('.topEnv').addClass('open');
 		$('.message').addClass('pull');
+		$('#button_open_envelope').css('transform', 'translateX(-80%)');
 		$('#button_open_envelope').addClass('gone');
 		$('.title9').addClass('newWidth')
 		$('.title9').html('<p>=)</p>');
@@ -52,7 +61,23 @@ $(document).ready(function() {
 					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller2);
 
-
+	// build scenes for toggle menu
+	new ScrollMagic.Scene({triggerElement: "#home", duration: homeDuration})
+					.setClassToggle("#high5", "active") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+	new ScrollMagic.Scene({triggerElement: "#resume", duration: resumeDuration})
+					.setClassToggle("#high6", "active") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+	new ScrollMagic.Scene({triggerElement: "#work", duration: workDuration})
+					.setClassToggle("#high7", "active") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
+	new ScrollMagic.Scene({triggerElement: "#contact", duration: contactDuration})
+					.setClassToggle("#high8", "active") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller2);
 	// Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
 
