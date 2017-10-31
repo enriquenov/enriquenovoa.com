@@ -1,10 +1,3 @@
-// <ul id="myMenu">
-// 	<li><a id="high1" href="#home"><span>home</span></a></li>
-// 	<li><a id="high2" href="#resume"><span>resume</span></a></li>
-// 	<li><a id="high3" href="#work"><span>my work</span></a></li>
-// 	<li><a id="high4" href="#contact"><span>contact</span></a></li>
-// </ul>
-
 
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
