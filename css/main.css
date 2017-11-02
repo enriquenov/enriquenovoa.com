@@ -49,16 +49,6 @@ section:after,
   clear: both;
 }
 /* Effects =================================================== */
-/* Animate all */
-
-/*.animate {
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}*/
-
-/* Animate color */
 
 /*.shadow {
   -webkit-appearance: none;
@@ -936,6 +926,8 @@ a {
   right: 0;
   width: 75%;
   text-align: center;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   color: white;
   transform: translateX(200%);
   transition: all 0.35s ease;
@@ -982,7 +974,7 @@ a {
  background-image: url('../img/logo-teal.png');
 }
 .project-bg3 {
-  background-image: url('../img/websites/digital-clock.png');
+  background-image: url('../img/websites/quote-generator.png');
 }
 .project-bg3 .img-square {
  background-image: url('../img/logo-teal.png');
