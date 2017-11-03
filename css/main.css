@@ -929,22 +929,6 @@ a {
   box-shadow: 0 7px 13px rgba(0, 0, 0, 0.25);
 }
 
-.projects .img-desc {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.60);
-  top: 75%;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  color: white;
-  transform: translateX(200%);
-  transition: all 0.35s ease;
-}
-.projects:hover .img-desc {
-  transform: translateX(0);
-}
 .projects .overlay {
   position: absolute;
   top: 0;
@@ -1007,7 +991,7 @@ a {
 .project-bg6 .img-square {
  background-image: url('../img/projects-cover/comment-bubbles.png');
 }
-.project-bg7 {
+/*.project-bg7 {
   background-image: url('../img/websites/e-commerce-template.png');
 }
 .project-bg7 .img-square {
@@ -1024,7 +1008,7 @@ a {
 }
 .project-bg9 .img-square {
  background-image: url('../img/logo-teal.png');
-}
+}*/
 /*-----------------------------------------------------------------------------------*/
 /* Page 3. WORK SECTION ENDS */
 /*-----------------------------------------------------------------------------------*/
@@ -1556,7 +1540,7 @@ footer p {
   .title7-1 {
     top: 40px;
   }
-  .about {
+  .about, .skills {
     width: 90%;
     margin: 80px auto 40px;
   }
@@ -1573,9 +1557,6 @@ footer p {
   .title5 {
     width: 100%;
     top: 40px;
-  }
-  .skills {
-    margin: 80px auto 40px;
   }
   .skill-bar {
     margin: 10px 0;
@@ -2113,6 +2094,7 @@ footer p {
     max-height: 750px;
   }
   .content {
+    text-align: center;
     margin-top: 150px;
   }
   .title3 {
@@ -2129,10 +2111,11 @@ footer p {
     width: 380px;
   }
   .education {
-    margin-top: -30px;
+    margin-top: 0;
   }
   .title6 {
-    width: 720px;
+    top: 420px;
+    width: 620px;
   }
   .skills {
     margin: 90px auto 80px 50px;
@@ -2144,8 +2127,17 @@ footer p {
     height: 15px;
   }
   .title7 {
-    top: 900px;
-    width: 660px;
+    top: 890px;
+    width: 510px;
+  }
+  .hobbies {
+    width: 120%;
+    margin: 150px auto 80px 20px;
+  }
+  .projects {
+    width: 360px;
+    height: 240px;
+    margin: 20px 40px 60px;
   }
   #button_open_envelope {
     top: -100px;
@@ -2211,8 +2203,7 @@ footer p {
     width: 420px;
   }
   .title6 {
-    top: 470px;
-    width: 720px;
+    top: 450px;
   }
   .skills {
     margin: 100px auto 80px 70px;
@@ -2227,12 +2218,11 @@ footer p {
     width: 120%;
   }
   .title7 {
-    width: 730px;
-    top: 930px;
+    top: 920px;
   }
   .hobbies {
     padding-left: 50px;
-    margin: 150px auto 60px;
+    margin: 160px auto 60px 20px;
   }
   .frame {
     display: inline-block;
@@ -2393,6 +2383,9 @@ footer p {
   #triptico {
     display: block;
   }
+  .content {
+    margin-left: -50px;
+  }
   .col-md-9 {
     width: 75%;
   }
@@ -2410,7 +2403,7 @@ footer p {
     width: 880px;
   }
   .education {
-    margin-top: -10px;
+    margin-top: -60px;
   }
   .education p span {
     font-size: 14px;
@@ -2443,6 +2436,9 @@ footer p {
   .title8 {
     margin-top: 90px;
   }
+  .projects {
+    margin: 20px 30px 40px;
+  }
   .title9 {
     width: 500px;
   }
@@ -2457,6 +2453,9 @@ footer p {
 @media only screen and (min-width: 1366px) {
   #home {
     height: 741.12px;
+  }
+  .content {
+    margin-left: -20px;
   }
   .face .coder .description {
     margin-right: 80px;
@@ -2487,13 +2486,13 @@ footer p {
     top: 1070px;
   }
   .education {
-    margin-top: -30px;
+    margin-top: -60px;
     width: 112%;
   }
   .hobbies {
     padding-left: 20px;
-    width: 140%;
-    margin: 180px auto 60px 20px;
+    width: 120%;
+    margin: 180px auto 60px 40px;
   }
   .title8 {
     margin-top: 60px;
@@ -2512,6 +2511,7 @@ footer p {
   }
   .content {
     margin-top: 220px;
+    margin-left: 0;
   }
   .face .designer .description {
     margin-left: 50px;
@@ -2534,8 +2534,8 @@ footer p {
     width: 870px;
   }
   .education {
-    margin-top: -10px;
-    width: 107%;
+    margin-top: -50px;
+    width: 113%;
   }
   .title7 {
     width: 820px;
@@ -2600,23 +2600,20 @@ footer p {
     width: 970px;
   }
   .education {
-    margin-top: 10px;
+    margin-top: -40px;
   }
   .title7 {
     width: 880px;
     top: 1100px;
   }
   .projects {
-    margin: 25px;
-  }
-  .projects {
-    width: 270px;
-    height: 180px;
+    width: 390px;
+    height: 260px;
   }
   .hobbies {
-    margin: 210px auto 100px;
+    margin: 210px auto 100px 50px;
     padding-left: 20px;
-    width: 130%;
+    width: 110%;
   }
 }
 
