@@ -49,6 +49,16 @@ section:after,
   clear: both;
 }
 /* Effects =================================================== */
+/* Animate all */
+
+/*.animate {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}*/
+
+/* Animate color */
 
 /*.shadow {
   -webkit-appearance: none;
@@ -924,7 +934,7 @@ a {
   background-color: rgba(0, 0, 0, 0.60);
   top: 75%;
   right: 0;
-  width: 75%;
+  width: 100%;
   text-align: center;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -965,19 +975,19 @@ a {
   background-image: url('../img/websites/weather-app.png');
 }
 .project-bg1 .img-square {
-  background-image: url('../img/logo-teal.png');
+  background-image: url('../img/projects-cover/weather-app.png');
 }
 .project-bg2 {
   background-image: url('../img/websites/google-books-search.png');
 }
 .project-bg2 .img-square {
- background-image: url('../img/logo-teal.png');
+ background-image: url('../img/projects-cover/google-books.PNG');
 }
 .project-bg3 {
   background-image: url('../img/websites/quote-generator.png');
 }
 .project-bg3 .img-square {
- background-image: url('../img/logo-teal.png');
+ background-image: url('../img/projects-cover/quotesgen.png');
 }
 .project-bg4 {
   background-image: url('../img/websites/wikipedia-api.png');
@@ -989,13 +999,13 @@ a {
   background-image: url('../img/websites/digital-clock.png');
 }
 .project-bg5 .img-square {
- background-image: url('../img/logo-teal.png');
+ background-image: url('../img/projects-cover/digital-time2.png');
 }
 .project-bg6 {
   background-image: url('../img/websites/commenting-app.png');
 }
 .project-bg6 .img-square {
- background-image: url('../img/logo-teal.png');
+ background-image: url('../img/projects-cover/comment-bubbles.png');
 }
 .project-bg7 {
   background-image: url('../img/websites/e-commerce-template.png');
@@ -1550,8 +1560,9 @@ footer p {
     width: 90%;
     margin: 80px auto 40px;
   }
-  .experience {
-    margin-top: 30px;
+  .experience, .education {
+    width: 90%;
+    margin: 30px auto 0;
   }
   .experience h5, .education h5 {
     padding-left: 15px;
@@ -1571,10 +1582,6 @@ footer p {
   }
   .skill, .skill2, .skill3 {
     height: 12px;
-  }
-  .education {
-    margin-left: 0;
-    margin-top: 30px;
   }
   .hobbies {
     margin: 80px auto 60px;
@@ -1665,11 +1672,7 @@ footer p {
   .face .designer .description, .face .coder .description {
     margin-top: -120px;
   }
-  .experience, .education {
-    width: 90%;
-    margin: 30px auto 0;
-  }
-  .project-bg1, .project-bg2, .project-bg3, .project-bg4, .project-bg5, .project-bg6 {
+  .projects {
     width: 270px;
     height: 180px;
   }
@@ -1687,9 +1690,6 @@ footer p {
 @media only screen and (min-width: 500px) {
   .title2, .title6-1, .title7-1 {
     width: 60%;
-  }
-  .content {
-    margin-top: 260px;
   }
   .about {
     margin: 80px 20px 40px;
@@ -1712,9 +1712,6 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
-  .content {
-    margin-top: 300px;
-  }
   .experience {
     margin-left: 20px;
   }
@@ -1726,17 +1723,6 @@ footer p {
   }
   .hanger {
     height: 280px;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  .content {
-    width: 100%;
-  }
-  h1,
-  .h1 {
-    /*font-size: 70px;
-    font-size: 7rem;*/
   }
 }
 
@@ -1842,7 +1828,6 @@ footer p {
     font-size: 24px;
     padding: 5px 40px;
   }
-
   .title8 {
     margin-top: 60px;
     width: 60%;
@@ -1879,7 +1864,6 @@ footer p {
   ::-webkit-input-placeholder {
     font-size: 20px;
   }
-
 }
 
 @media only screen and (min-width: 850px) {
@@ -1895,7 +1879,6 @@ footer p {
 }
 
 @media only screen and (min-width: 900px) {
-
   .about, .skills {
     width: 110%;
     margin-left: 60px;
@@ -1926,7 +1909,6 @@ footer p {
 }
 
 @media only screen and (min-width: 960px) {
-
   .col-md-9 {
     width: 100%;
   }
@@ -1964,7 +1946,6 @@ footer p {
 }
 
 @media only screen and (min-width: 1024px) {
-
   #navigation-bar {
     display: block;
   }
@@ -1984,16 +1965,9 @@ footer p {
   p {
     font-size: 14px;
   }
-  #home
-  /*#contact */
-  {
-    height: 579px;
-    height: 725px;
-  }
   .content {
-    width: 1040px;
-    margin-top: 30px;
-    margin-left: -20px;
+    width: 100%;
+    margin: 40px auto 0;
   }
   .face .coder, .face .designer {
     width: 28%;
@@ -2100,7 +2074,7 @@ footer p {
     margin-top: 180px;
     margin-bottom: 80px;
   }
-  .project-bg1, .project-bg2, .project-bg3, .project-bg4, .project-bg5, .project-bg6 {
+  .projects {
     width: 240px;
     height: 160px;
   }
@@ -2179,7 +2153,6 @@ footer p {
   .frame {
     margin: 300px auto 60px;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2306,7 +2279,6 @@ footer p {
     background-color: #64b3f4;
     box-shadow: none;
   }
-
   .navbar-left,.navbar-right {
     float: none !important;
   }
@@ -2328,23 +2300,15 @@ footer p {
 		top: 0;
 		border-width: 0 0 1px;
 	}
-  .navbar-default>.container .navbar-brand,
-  .navbar-default>.container-fluid .navbar-brand,
-  .navbar-default.affix>.container .navbar-brand,
-  .navbar-default.affix>.container-fluid .navbar-brand {
-    width: 60px;
+  .navbar-default>.container img {
+    width: 42px;
     height: 42px;
-    background-image: url("../img/logo-white.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 42px;
-    background-position: 0 0;
-    transform: translateX(10px) translateY(6px);
+    float: left;
+    left: 25px;
+    top: 5px;
   }
   .navbar-collapse.collapse {
     display: none!important;
-    /*width: 25%;
-    float: right;*/
   }
   .navbar-nav {
     background-color: white;
@@ -2386,18 +2350,15 @@ footer p {
     box-shadow: none;
     border: none;
    }
-
   #triptico {
     display: none;
   }
-
   .col-sm-3 {
     margin-left: -25%;
   }
   .col-sm-9 {
     width: 100%;
   }
-
   .open {
     border-top: 150px solid #2c3e50;
   }
@@ -2423,7 +2384,6 @@ footer p {
   .frame {
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 1280px) {
@@ -2432,9 +2392,6 @@ footer p {
   }
   #triptico {
     display: block;
-  }
-  .content {
-    margin-left: -65px;
   }
   .col-md-9 {
     width: 75%;
@@ -2501,10 +2458,6 @@ footer p {
   #home {
     height: 741.12px;
   }
-  .content {
-    margin-top: 220px;
-    margin-left: -34px;
-  }
   .face .coder .description {
     margin-right: 80px;
   }
@@ -2558,7 +2511,7 @@ footer p {
     max-height: 820px;
   }
   .content {
-    margin-left: 0;
+    margin-top: 220px;
   }
   .face .designer .description {
     margin-left: 50px;
@@ -2660,25 +2613,10 @@ footer p {
     width: 270px;
     height: 180px;
   }
-
   .hobbies {
     margin: 210px auto 100px;
     padding-left: 20px;
     width: 130%;
-  }
-
-
-}
-
-@media only screen and (min-width: 1750px) {
-  .content {
-    margin-top: 30vh;
-  }
-  #triptico {
-    /*right: 9vw;*/
-  }
-  .title1 {
-    top: 8vh;
   }
 }
 
@@ -2804,13 +2742,4 @@ footer p {
   .newWidth {
     width: 300px;
   }
-
-
 }
-
-/*@media only screen and (min-width: 2560px) {
-  #triptico {
-    right: 22vw;
-  }
-
-}*/
