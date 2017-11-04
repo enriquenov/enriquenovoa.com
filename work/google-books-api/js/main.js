@@ -32,7 +32,7 @@ searchBtn.addEventListener('click', function() {
       dataType: 'json',
       success: function(data) {
         console.log(data);
-        searcher.style.marginTop = "80px";
+        searcher.style.marginTop = "5vh";
         // searcher.style.display = "none";
         // backButton.style.display = "inline-block";
 
@@ -46,14 +46,13 @@ searchBtn.addEventListener('click', function() {
   				a.href = data.items[i].volumeInfo.previewLink;
   				a.target = "_blank";
   				a.appendChild(img);
+          $("img").addClass("animated fadeInUp");
 
-
-
-          results.innerHTML += '<hr>';
-          results.innerHTML += '<h1>' + data.items[i].volumeInfo.title + '</h1>';
-          results.innerHTML += '<h3>' + 'by '+ data.items[i].volumeInfo.authors + '</h3>';
+          results.innerHTML += '<hr class="animated fadeInUp">';
+          results.innerHTML += '<h1 class="animated fadeInUp">' + data.items[i].volumeInfo.title + '</h1>';
+          results.innerHTML += '<h3 class="animated fadeInUp">' + 'by '+ data.items[i].volumeInfo.authors + '</h3>';
           results.appendChild(a);
-          results.innerHTML += '<p class="description">' + data.items[i].volumeInfo.description + '</p>';
+          results.innerHTML += '<p class="description animated fadeInUp">' + data.items[i].volumeInfo.description + '</p>';
 
         }
 
