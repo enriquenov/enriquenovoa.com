@@ -1673,7 +1673,7 @@ footer p {
     width: 60%;
   }
   .about {
-    margin: 80px 20px 40px;
+    margin: 80px auto 40px;
   }
   .title3-1, .title4, .title8 {
     width: 80%;
@@ -1684,26 +1684,8 @@ footer p {
   .skills {
     width: 85%;
   }
-  .education {
-    margin-left: 20px;
-  }
   .title9 {
     width: 75%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .experience {
-    margin-left: 20px;
-  }
-  .title1 {
-    width: 30%;
-  }
-  .title2 {
-    margin: 210px auto 0;
-  }
-  .hanger {
-    height: 280px;
   }
 }
 
@@ -1777,8 +1759,7 @@ footer p {
   .education {
     width: 140%;
     margin-left: 30px;
-    /*margin-top: -140px;*/
-    margin-top: -40px;
+    margin-top: -80px;
   }
   .title5 {
     top: 50px;
@@ -1790,7 +1771,7 @@ footer p {
     top: 460px;
   }
   .skills {
-    margin: 100px auto 80px 20%;
+    margin: 100px auto 80px 30px;
     width: 130%;
   }
   .skill-bar {
@@ -1799,11 +1780,11 @@ footer p {
   .title7 {
     display: block;
     width: 180%;
-    top: 900px;
+    top: 910px;
   }
   .hobbies {
-    margin: 140px auto 80px 20px;
-    width: 140%;
+    margin: 160px auto 80px 20px;
+    width: 131%;
   }
   .title3 p, .title4 p, .title5 p, .title6 p, .title7 p, .title8 p, .title9 p {
     font-size: 24px;
@@ -1847,84 +1828,31 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 850px) {
-  .about, .skills {
-    width: 120%;
-  }
-  .experience, .education, .hobbies {
-    width: 130%;
-  }
-  .title4, .title5 {
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .about, .skills {
-    width: 110%;
-    margin-left: 60px;
-  }
-  .experience, .education, .hobbies {
-    width: 120%;
+@media only screen and (min-width: 800px) {
+  .title4 {
+    width: 400px;
   }
   .education {
-    width: 130%;
-    margin-top: -120px;
-    margin-left: 30px;
-  }
-  .title3 {
-    width: 85%;
-  }
-  .title4, .title5 {
-    width: 50%;
-  }
-  .skill-bar {
-    margin: 15px 0;
-  }
-  .title7 {
-    top: 1000px;
-  }
-  .hobbies {
-    margin: 150px auto 80px 20px;
+    margin-top: -60px;
   }
 }
 
-@media only screen and (min-width: 960px) {
-  .col-md-9 {
+@media only screen and (min-width: 920px) {
+  .about {
     width: 100%;
   }
-  p {
-    font-size: 18px;
-  }
-  .about, .skills {
-    width: 110%;
-    margin-left: 25%;
-  }
-  .title4, .title5 {
-    width: 40%;
-  }
-  .title6 {
-    top: 520px;
-  }
-  .title7 {
-    top: 1050px;
+  .experience {
+    width: 105%;
   }
   .education {
-    margin-top: -160px;
+    width: 115%;
   }
   .hobbies {
-    width: 130%;
+    margin: 160px auto 80px 40px;
+    width: 108%;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .hobbies {
-    width: 120%;
-  }
-  .title7 {
-    top: 1020px;
-  }
-}
 
 @media only screen and (min-width: 1024px) {
   #navigation-bar {
@@ -2033,20 +1961,20 @@ footer p {
   }
   .title6 {
     width: 520px;
-    top: 440px;
+    top: 420px;
   }
   .education {
     width: 110%;
     margin-left: 60px;
-    margin-top: 10px;
+    margin-top: -30px;
   }
   .title7 {
-    width: 450px;
-    top: 890px;
+    top: 880px;
+    width: 440px;
   }
   .hobbies {
-    width: 135%;
-    margin: 140px auto 80px;
+    width: 110%;
+    margin: 150px auto 80px 40px;
   }
   .title8 {
     width: 450px;
@@ -2088,6 +2016,7 @@ footer p {
 }
 
 @media only screen and (min-width: 1140px) {
+
   #home, #contact {
     height: 96.5vh;
     min-height: 700px;
@@ -2701,18 +2630,19 @@ footer p {
     width: 950px;
   }
   .education {
-    margin-top: -50px;
+    margin-top: -100px;
     margin-left: 70px;
   }
   .education p span {
     font-size: 16px;
   }
   .title7 {
-    top: 1230px;
+    top: 1250px;
     width: 930px;
   }
   .hobbies {
-    margin: 210px auto 100px;
+    margin: 220px auto 100px 20px;
+    width: 116%;
     padding-left: 0;
   }
   .title8 {
