@@ -991,13 +991,13 @@ a {
 .project-bg6 .img-square {
  background-image: url('../img/projects-cover/comment-bubbles.png');
 }
-/*.project-bg7 {
-  background-image: url('../img/websites/e-commerce-template.png');
+.project-bg7 {
+  background-image: url('../img/websites/onepage.png');
 }
 .project-bg7 .img-square {
- background-image: url('../img/logo-teal.png');
+ background-image: url('../img/projects-cover/marketing.png');
 }
-.project-bg8 {
+/*.project-bg8 {
   background-image: url('../img/websites/digital-clock.png');
 }
 .project-bg8 .img-square {

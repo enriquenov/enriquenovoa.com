@@ -1,0 +1,675 @@
+/*------------------
+	Preloader
+--------------------*/
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #000;
+}
+
+.loader {
+	width: 52px;
+	height: 52px;
+	border: 6px solid #999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -26px;
+	margin-left: -26px;
+	border-radius: 120px;
+	border-left-color: #121212;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/*------------------
+	NAVIGATION BAR + TOGGLE || LOGO
+--------------------*/
+
+.toggle {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  z-index: 2;
+}
+.toggle a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+.toggle a.active {
+  color: #262626;
+}
+.toggle a i {
+  transition: all 0.35 ease-in-out;
+}
+.toggle a i:hover {
+  transform: scale(1.1);
+}
+.logo {
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  z-index: 2;
+}
+.logo a {
+  text-decoration: none;
+  color: #ef0d32;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 1px 1px #262626;
+}
+
+.logo a p:hover {
+  animation: roll 3s ease;
+  transform: rotate(30deg);
+  animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#navbar {
+	top: 0px;
+  right: -25%;
+  bottom: 0px;
+	position: fixed;
+  width: 25%;
+  height: 100%;
+	z-index:1;
+	background-color: #FFF;
+  transition: 0.5s;
+}
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+	width: 95%;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+	font-family: verdana;
+	font-size: 1.2em;
+  margin: 5px auto;
+	padding: 5px 30px;
+  border-radius: 25px;
+	color: #262626;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.35s ease;
+}
+#navbar ul li a:hover {
+  background: #C0C0C0;
+  color: #FFF!important;
+}
+li .item.active {
+  background: tomato;
+  color: #FFF!important;
+}
+#navbar.active {
+  right: 0;
+  overflow: auto;
+}
+
+
+/*...........................................*/
+/* ..................PAGE 1..................*/
+/*...........................................*/
+
+.container {
+	width: 80%;
+}
+
+
+.page1 {
+  background-image: url('../img/success1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page1 .box {
+  margin-top: 150px;
+}
+
+.page1 .box h1 {
+  font-size: 6em;
+  color: #DDD;
+}
+
+.page1 .box hr.red {
+  width: 100px;
+  border-color: #ef0d32;
+  border-width: 4px;
+  display: inline-block;
+}
+
+.page1 .box p {
+  color: #DDD;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.page1 .box button {
+  color: #DDD;
+  background-color: #ef0d32;
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 10px 40px;
+  letter-spacing: 0.05em;
+}
+.page1 .box button:hover {
+  background-color: #fe1a3f;
+  color: #EEE;
+}
+
+.page1 .footer1 .left {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.page1 .footer1 .left p {
+  padding-top: 10px;
+  color: #EEE;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.page1 .footer1 .left p span {
+  padding: 5px 0;
+  border-bottom: 1px solid #FFF;
+}
+
+.page1 .footer1 .right {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.page1 .footer1 .right ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.page1 .footer1 .right ul li img {
+  width: auto;
+  height: 50px;
+}
+
+/*...........................................*/
+/* ..................PAGE 2, 3 and 4..................*/
+/*...........................................*/
+
+.page2 {
+  color: #FFF;
+  background-color: #00adf2;
+}
+
+.page2 .left, .page3 .left {
+  padding-top: 15vh;
+  /*display: inline-block;*/
+}
+
+.page2 .left h1, .page3 .left h1, .page4 .left h1 {
+  font-size: 4em;
+}
+
+.page2 .left hr, .page3 .left hr, .page4 .left hr {
+  width: 100px;
+  border-color: #FFF;
+  border-width: 4px;
+  display: inline-block;
+}
+
+.page2 .left p, .page3 .left p, .page4 .left p {
+  line-height: 1.8em;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+}
+
+.page2 .left a, .page3 .left a, .page4 .left a {
+  text-transform: uppercase;
+  color: #FFF !important;
+  padding: 15px 60px;
+  border: 2px solid #FFF;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.page2 .left a:hover, .page3 .left a:hover, .page4 .left a:hover {
+  text-decoration: none;
+  background-color: #FFF;
+  color: #00adf2 !important;
+}
+
+.page2 .right, .page3 .right {
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  height: 60vh;
+  background-image: url('../img/iphone6.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*...........................................*/
+/* ..................PAGE 3..................*/
+/*...........................................*/
+
+.page3, .page3 .left a {
+  color: #FFF;
+  background-color: #ff943b;
+}
+
+/*...........................................*/
+/* ..................PAGE 4..................*/
+/*...........................................*/
+
+.page4 {
+	color: #FFF;
+  background-color: #01cc99;
+}
+
+.page4 .col-md-5 {
+	height: auto;
+	margin-top: 25%;
+}
+
+.page4 .col-md-6 {
+	height: 100vh;
+}
+
+.page4 .col-md-6 .ipad-game {
+	margin: 0 auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../img/ipad-game.png');
+  width: 100%;
+  background-size: 75%;
+  background-position: 100% 100%;
+}
+
+/*...........................................*/
+/* ..................PAGE 5..................*/
+/*...........................................*/
+
+.page5 {
+  background-color: #076194;
+  text-align: center;
+}
+.page5 .up {
+	height: 40vh;
+}
+.page5 .game-app {
+  margin: 0 auto;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.page5 .game-app {
+  background-image: url('../img/iphone-game.png');
+  width: auto;
+  background-size: contain;
+  background-position: center;
+}
+
+.page5 .lorem {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page5 .lorem p {
+  font-weight: 100;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/*...........................................*/
+/* ..................CONTACT FORM..................*/
+/*...........................................*/
+
+
+/* ====================
+   [11] Contact
+==================== */
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+#contact-me {
+ width:100%;
+ padding-bottom: 30px;
+ background-color:#ffffff;
+}
+#contact-me h2.title {
+	font-size: 80px;
+	font-weight: 800;
+	letter-spacing: 8px;
+	color: #2C2C2C;
+	color: #FFF;
+	-webkit-text-stroke: 2px #444;
+	text-align: center;
+	position: relative;
+	margin: 40px 0 100px;
+}
+#contact-me .contact-info{
+    padding:5px 0 5px 50px;
+    position:relative;
+}
+#contact-me .contact-info h4{
+    font-size:20px;
+    font-weight:800;
+}
+#contact-me .contact-info i{
+    position:absolute;
+    top:30px;
+    left:4px;
+    display:inline-block;
+    font-size:30px;
+}
+#contact-me .contact-me-nested {
+  height: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+}
+#contact-me .contact-me-nested input,
+#contact-me .contact-me-nested textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 2px solid #333333;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+#contact-me .contact-me-nested textarea {
+  font-size: 14px;
+  letter-spacing: 2px;
+  resize: vertical;
+  min-height: 100px;
+}
+#contact-me .contact-me-nested button {
+    display: block;
+    width: 150px;
+    margin: auto;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid #333333;
+    outline:none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+#contact-me .contact-me-nested button:hover{
+    background-color:#333333;
+    color:#fff;
+}
+#contact-me .contact-me-nested .form-filed-container{
+    padding:20px 0 40px;
+    position:relative;
+}
+#contact-me .contact-me-nested .form-filed-container [class^="error"]{
+    position:absolute;
+    top:5px;
+    text-transform:uppercase;
+    font-size:10px;
+    letter-spacing:4px;
+    display:none;
+}
+.success{
+    width:100%;
+    position:relative;
+    background-color:#e8e8e8;
+    color:#222222;
+    font-size:40px;
+    display:none;
+}
+.success h4 {
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Raleway,Arial,'Open Sans';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.success h4 span{
+    display:inline-block;
+}
+
+/* ====================
+End Contact
+==================== */
+
+/* ======================
+  [12] footer
+====================== */
+#footer{
+    width:100%;
+    padding:50px 0;
+    background-color:#333333;
+}
+#footer p{
+    margin-bottom:30px;
+    color:#ffffff;
+    font-size:16px;
+}
+#footer a{
+    text-decoration:none;
+    color:#636060;
+}
+#footer .social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 2em;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+/* ======================
+End footer
+====================== */
+
+@media only screen and (max-width: 1366px) {
+	.page1 .box h1 {
+		font-size: 5.2em;
+	}
+	.page1 .footer1 .right ul li img {
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.page1 .box h1 {
+		font-size: 4.8em;
+	}
+	.page1 .footer1 .left p {
+		font-size: 1.1em;
+	}
+	.page1 .footer1 .right ul li img {
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.page1 .footer1 .left p {
+		font-size: 1em;
+	}
+	.page1 .box p {
+		font-size: 1.2em;
+	}
+	.page1 .box h1 {
+		font-size: 4em;
+	}
+	.page1 .box button {
+		font-size: 1.2em;
+	}
+	.page2 .left h1, .page3 .left h1, .page4 .left h1 {
+		font-size: 3em;
+	}
+	.page2 .left p, .page3 .left p, .page4 .left p {
+		font-size: 1em;
+	}
+	.page2 .left a, .page3 .left a, .page4 .left a {
+		padding: 15px 40px;
+	}
+	#navbar ul li a {
+		font-size: 1em;
+	}
+	.page2 .left, .page3 .left {
+		padding-top: 10vh;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.container {
+		width: 85%;
+	}
+	.logo {
+		top: 20px;
+		left: 30px;
+	}
+	.toggle {
+		top: 20px;
+		right: 30px;
+	}
+	.logo a {
+		font-size: 40px;
+	}
+	#navbar {
+		width: 100%;
+		right: -100%;
+	}
+
+	.page1 .box h1 {
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+	.page1 .box button {
+		font-size: 1em;
+	}
+	.page1 .footer1 .left, .page1 .footer1 .right {
+		display: block;
+		text-align: center;
+	}
+	.page1 .footer1 .right ul {
+		padding-left: 0;
+	}
+	.page1 .footer1 .right ul li img {
+		height: 36px;
+	}
+	.page1 .footer1 .left p {
+		font-size: 0.8em;
+	}
+	.page2 .left, .page3 .left {
+		padding-top: 13vh;
+		padding-bottom: 5vh;
+	}
+	.page2 .right, .page3 .right {
+		height: 35vh;
+	}
+	.page5 .up {
+		padding-top: 10vh;
+	}
+	.page5 .lorem {
+		width: 90%;
+	}
+	#contact-me h2.title {
+		font-size: 40px;
+		margin: 120px 0 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.page1 .box {
+		margin-top: 100px;
+	}
+	.page1 .box h1 {
+		font-size: 2.4em;
+	}
+	.page1 .box button {
+		margin: 20px 0;
+	}
+	.page2 .left p, .page3 .left p, .page4 .left p {
+		margin-bottom: 30px;
+	}
+	.page2 .left h1, .page3 .left h1, .page4 .left h1 {
+		font-size: 2.4em;
+	}
+	.page2 .left a, .page3 .left a, .page4 .left a {
+		padding: 10px 25px;
+	}
+	#contact-me h2.title {
+		font-size: 32px;
+		margin: 120px 0 10px;
+	}
+}
