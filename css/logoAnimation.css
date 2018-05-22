@@ -13,64 +13,64 @@ svg {
 
 svg .st0{fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-dasharray:9.7168,9.7168;}
 svg .st1{fill:none;stroke:#FFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-/*svg .st2{fill:none;stroke:red;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}*/
 
-svg g#animatedLogo line#menorQueTop {
+
+svg:hover g.animatedLogo line#menorQueTop {
   transform-origin: bottom;
-  animation: rotating1 8s ease-in-out infinite;
+  animation: rotating1 8s ease-in-out;
 }
 
-svg g#animatedLogo line#menorQueBottom {
+svg:hover g.animatedLogo line#menorQueBottom {
   transform-origin: top;
-  animation: rotating2 8s ease-in-out infinite;
+  animation: rotating2 8s ease-in-out;
 }
 
-svg g#animatedLogo line#eTop {
+svg:hover g.animatedLogo line#eTop {
   transform-origin: center;
-  animation: rotating3 8s ease-in-out infinite;
+  animation: rotating3 8s ease-in-out;
 }
 
-svg g#animatedLogo line#eBottom {
+svg:hover g.animatedLogo line#eBottom {
   transform-origin: center;
-  animation: rotating4 8s ease-in-out infinite;
+  animation: rotating4 8s ease-in-out;
 }
 
-svg g#animatedLogo line#eCenterLeft {
+svg:hover g.animatedLogo line#eCenterLeft {
   transform-origin: center;
-  animation: toRight 8s ease-in-out infinite;
+  animation: toRight 8s ease-in-out;
 }
 
-svg g#animatedLogo line#eCenterRight {
+svg:hover g.animatedLogo line#eCenterRight {
   transform-origin: center;
-  animation: shrink 8s ease-in-out infinite;
+  animation: shrink 8s ease-in-out;
 }
 
-svg g#animatedLogo line#nLeft {
+svg:hover g.animatedLogo line#nLeft {
   transform-origin: center;
-  animation: stretch 8s ease-in-out infinite;
+  animation: stretch 8s ease-in-out;
 }
 
-svg g#animatedLogo line#nCenterLeft {
+svg:hover g.animatedLogo line#nCenterLeft {
   transform-origin: top;
-  animation: toLeft 8s ease-in-out infinite;
+  animation: toLeft 8s ease-in-out;
 }
 
-svg g#animatedLogo line#nCenterRight {
+svg:hover g.animatedLogo line#nCenterRight {
   transform-origin: bottom;
-  animation: toRight2 8s ease-in-out infinite;
+  animation: toRight2 8s ease-in-out;
 }
 
-svg g#animatedLogo line#nRight {
+svg:hover g.animatedLogo line#nRight {
   transform-origin: center;
-  animation: toLeft2 8s ease-in-out infinite;
+  animation: toLeft2 8s ease-in-out;
 }
 
-svg g#animatedLogo line#mayorQueTop {
+svg:hover g.animatedLogo line#mayorQueTop {
   transform-origin: bottom;
-  animation: rotating5 8s ease-in-out infinite;
+  animation: rotating5 8s ease-in-out;
 }
 
-svg g#animatedLogo line#mayorQueBottom {
+svg:hover g.animatedLogo line#mayorQueBottom {
   transform-origin: top;
   animation: rotating6 8s ease-in-out infinite;
 }
