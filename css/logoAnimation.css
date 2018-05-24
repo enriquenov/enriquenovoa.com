@@ -97,7 +97,7 @@ svg:hover g.animatedLogo line#mayorQueBottom {
   }
 }
 
-@keyframes rotating2 {
+/* @keyframes rotating2 {
   0% {
     transform: rotate(0) translate(0, 0) scale(1);
   }
@@ -327,4 +327,4 @@ svg:hover g.animatedLogo line#mayorQueBottom {
   52% {
     transform: rotate(0) translate(0, 0) scale(1);
   }
-}
+} */
