@@ -16,7 +16,7 @@ svg .st0 {fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-dasharray:9.7168,9.7
 svg .st1 {fill:none;stroke:#FFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 svg g.animatedLogo line {
-  transition-duration: .3s;
+  transition-duration: .25s;
   transition-timing-function: ease;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
