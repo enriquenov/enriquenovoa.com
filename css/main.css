@@ -97,6 +97,11 @@ body {
   padding: 0;
   width: auto;
 }
+.container-fluid, .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 .col-xs-9 {
   padding: 0;
@@ -147,7 +152,6 @@ p {
   position: relative;
   display: block;
   z-index: 990;
-  height: 96.5vh;
   overflow: hidden;
   width: 100%;
   min-width: 320px;
@@ -222,6 +226,10 @@ p {
   /*color: #3b596a;*/
 }
 
+.title1, .title3, .title6, .title7 {
+  display: none;
+}
+
 .title1 {
   animation: slideInLeft 0.5s ease-in;
   background-color: #FFF;
@@ -261,7 +269,7 @@ p {
   position: absolute;
   background-color: white;
   box-shadow: 4px 4px 10px #888;
-  width: 75%;
+  width: 60%;
   padding: 8px;
   margin: 110px auto 0px;
   left: 0;
@@ -271,13 +279,13 @@ p {
 
 .title2 h1 {
   font-family: 'Quattrocento Sans';
-  font-size: 30px;
-  margin: 15px auto 10px;
+  font-size: 14px;
+  margin: 2px auto 0px;
 }
 
 .title2 h1 span {
   color: #0C090A;
-  font-size: 40px;
+  font-size: 16px;
   font-weight: bold;
   font-family: "Julius Sans One";
 }
@@ -527,6 +535,12 @@ a {
 .face .coder p,
 .face .designer p {
   display: none;
+}
+
+.face .designer .description,
+.face .coder .description {
+  text-align: center;
+  margin-top: -90px;
 }
 
 @media only screen and (min-width: 321px) {
@@ -1490,31 +1504,11 @@ footer p {
   p {
     font-size: 13px;
   }
-  .container-fluid, .container {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
   .navbar-nav {
     width: 60%;
   }
   #home, #work, #resume, #contact {
     height: auto;
-  }
-  .face .designer .description,
-  .face .coder .description {
-    text-align: center;
-    margin-top: -90px;
-  }
-  .title1, .title3, .title6, .title7 {
-    display: none;
-  }
-  .title2 h1 {
-    margin: 2px auto 0px;
-    font-size: 16px;
-  }
-  .title2 h1 span {
-    font-size: 18px;
   }
   .title1 p, .title3 p, .title3-1 p, .title4 p,
   .title5 p, .title6 p, .title6-1 p,
