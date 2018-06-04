@@ -1663,8 +1663,17 @@ footer p {
 }
 
 @media only screen and (min-width: 500px) {
-  .title2, .title6-1, .title7-1 {
+  .title6-1, .title7-1 {
     width: 60%;
+  }
+  .title2 {
+    width: 300px;
+  }
+  .title2 h1 {
+    font-size: 18px;
+  }
+  .title2 h1 span {
+    font-size: 21px;
   }
   .about {
     margin: 80px auto 40px;
@@ -1705,7 +1714,7 @@ footer p {
   }
   .title2 {
     margin: 180px auto 0 auto;
-    width: 50vw;
+    width: 385px;
   }
   .title2 h1 {
     margin: 8px auto 5px;
@@ -1896,15 +1905,11 @@ footer p {
     /*height: 200px;*/
   }
   .title2 {
-    /*margin: 150px auto 0;*/
-    width: 35vw;
+    width: 420px;
   }
   .title2 h1 {
-    font-size: 24px;
+    /* font-size: 24px; */
     margin: 8px auto 5px;
-  }
-  .title2 h1 span {
-    font-size: 26px;
   }
   #triptico {
     display: none;
@@ -2020,6 +2025,36 @@ footer p {
     text-align: center;
     margin-top: 150px;
   }
+  .title1 {
+    width: 210px;
+  }
+  .title1 p {
+    font-size: 30px;
+  }
+  .title2 h1 {
+    font-size: 30px;
+  }
+  .title2 h1 span {
+    font-size: 36px;
+  }
+  .face .designer .description, .face .coder .description {
+    width: 250px;
+  }
+  .face .designer .description {
+    margin-left: 90px;
+  }
+  .face .coder .description {
+    margin-right: 90px;
+  }
+  .face .coder h1, .face .designer h1 {
+    font-size: 50px;
+    font-size: 5rem;
+  }
+  .face .coder p, .face .designer p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.4em;
+  }
   .title3 {
     width: 750px;
   }
@@ -2072,39 +2107,6 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
 
-  .title1 {
-    width: 210px;
-  }
-  .title1 p {
-    font-size: 30px;
-  }
-  .title2 {
-    width: 38vw;
-  }
-  .title2 h1 {
-    font-size: 30px;
-  }
-  .title2 h1 span {
-    font-size: 36px;
-  }
-  .face .designer .description, .face .coder .description {
-    width: 250px;
-  }
-  .face .designer .description {
-    margin-left: 90px;
-  }
-  .face .coder .description {
-    margin-right: 90px;
-  }
-  .face .coder h1, .face .designer h1 {
-    font-size: 50px;
-    font-size: 5rem;
-  }
-  .face .coder p, .face .designer p {
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 1.4em;
-  }
   .title3 {
     width: 800px;
     top: 60px;
