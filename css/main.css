@@ -574,26 +574,8 @@ a {
     font-size: 4.7rem;
   }
 }
-@media only screen and (min-width: 750px) {
-  /* .face .coder,
-  .face .designer {
-    width: 25%;
-    height: 35%;
-  } */
-  /* .face .coder h1,
-  .face .designer h1 {
-    font-size: 45px;
-    font-size: 4.5rem;
-  } */
-}
+
 @media only screen and (min-width: 860px) {
-  /* .face .coder p,
-  .face .designer p {
-
-    font-size: 16px;
-    font-size: 1.6rem;
-
-  } */
   .face .coder,
   .face .designer {
     width: 25%;
@@ -610,6 +592,26 @@ a {
     font-size: 14px;
     font-size: 1.4rem;
     margin: 0px;
+  }
+
+  .face .designer .description, .face .coder .description {
+    margin-top: -40px;
+    width: 250px;
+  }
+  .face .designer .description {
+    margin-left: 30px;
+  }
+  .face .coder .description {
+    margin-left: -70px;
+  }
+  .face .coder h1, .face .designer h1 {
+    font-size: 50px;
+    font-size: 5rem;
+  }
+  .face .coder p, .face .designer p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.4em;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -643,19 +645,19 @@ a {
     /* Face images */
     /* Background images */
     /* Hide default image with no effects */
-  .face .coder,
+  /* .face .coder,
   .face .designer {
     width: 520px;
     height: 600px;
     top: 0px;
     position: absolute;
-  }
-  .face .coder .description,
+  } */
+  /* .face .coder .description,
   .face .designer .description {
     position: absolute;
     top: 180px;
     width: 200px;
-  }
+  } */
   .face .coder .arrow,
   .face .designer .arrow {
     width: 85px;
@@ -671,10 +673,10 @@ a {
     font-size: 1.4rem;
     line-height: 1.4em;
   }
-  .face .coder {
+  /* .face .coder {
     text-align: left;
     right: 0px;
-  }
+  } */
   .face .coder .description {
     right: 0px;
     margin-right: 120px;
@@ -683,9 +685,9 @@ a {
     right: 0px;
     background-position: 0px -751px;
   }
-  .face .designer {
+  /* .face .designer {
     left: 0px;
-  }
+  } */
   .face .designer .description {
     left: 0px;
     margin-left: 120px;
@@ -1627,7 +1629,7 @@ footer p {
 
 @media only screen and (min-width: 414px) {
   .content {
-    margin-top: 300px;
+    margin-top: 240px;
   }
   .title1 {
     top: 100px;
@@ -2055,12 +2057,11 @@ footer p {
   .title2 h1 span {
     font-size: 36px;
   }
-
   .content {
     text-align: center;
     margin-top: 150px;
   }
-  .face .designer .description, .face .coder .description {
+  /* .face .designer .description, .face .coder .description {
     width: 250px;
   }
   .face .designer .description {
@@ -2077,7 +2078,7 @@ footer p {
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 1.4em;
-  }
+  } */
   .title3 {
     width: 750px;
   }

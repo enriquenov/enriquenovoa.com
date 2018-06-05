@@ -109,7 +109,7 @@ $(document).ready(function() {
 		// Build a scene
 		var scene = new ScrollMagic.Scene({
 			triggerElement: this,
-			triggerHook: 0.95,
+			triggerHook: 1,
 			reverse: false
 		})
 		.setClassToggle(this, 'html')
@@ -121,7 +121,7 @@ $(document).ready(function() {
 		// Build a scene
 		var scene = new ScrollMagic.Scene({
 			triggerElement: this,
-			triggerHook: 0.95,
+			triggerHook: 1,
 			reverse: false
 		})
 		.setClassToggle(this, 'css')
@@ -133,7 +133,7 @@ $(document).ready(function() {
 		// Build a scene
 		var scene = new ScrollMagic.Scene({
 			triggerElement: this,
-			triggerHook: 0.95,
+			triggerHook: 1,
 			reverse: false
 		})
 		.setClassToggle(this, 'javascript')
