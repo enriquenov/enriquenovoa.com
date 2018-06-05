@@ -645,19 +645,7 @@ a {
     /* Face images */
     /* Background images */
     /* Hide default image with no effects */
-  /* .face .coder,
-  .face .designer {
-    width: 520px;
-    height: 600px;
-    top: 0px;
-    position: absolute;
-  } */
-  /* .face .coder .description,
-  .face .designer .description {
-    position: absolute;
-    top: 180px;
-    width: 200px;
-  } */
+
   .face .coder .arrow,
   .face .designer .arrow {
     width: 85px;
@@ -673,10 +661,6 @@ a {
     font-size: 1.4rem;
     line-height: 1.4em;
   }
-  /* .face .coder {
-    text-align: left;
-    right: 0px;
-  } */
   .face .coder .description {
     right: 0px;
     margin-right: 120px;
@@ -1042,34 +1026,6 @@ a {
   left: -50px !important;
   background-color: white;
 }
-
-/*#email-me {
-  position: absolute;
-  left: 55vw;
-  margin-top: 80px;
-  width: 150px;
-  height: auto;
-  text-align: center;
-}
-
-.contact-me {
-  background-color: #FF6138;
-  border-radius: 10px;
-  color: #fff;
-	height: auto;
-  font-family: "Quattrocento Sans";
-  width: 100%;
-  font-size: 26px;
-  padding: 12px;
-  z-index: 190;
-  text-rendering: optimizelegibility;
-  transition: all 0.35s ease-in-out;
-  font-weight: bold;
-}
-
-.fa-paper-plane-o {
-  margin-top: 20px;
-}*/
 
 .frame{
 	width: 600px;
@@ -1573,13 +1529,12 @@ footer p {
   }
   .title9 {
     margin-top: 40px;
-    width: 100%;
+    width: 320px;
   }
   #contact-form2 {
     display: inline-block;
     width: 100%;
     margin: 100px auto 40px;
-    float: left;
   }
   .form input.input-md, .form select.input-md {
     padding: 0 5px;
@@ -1622,7 +1577,7 @@ footer p {
   .title7-1 {
     width: 75%;
   }
-  .skills, .title8, .title9 {
+  .skills, .title8 {
     width: 90%;
   }
 }
@@ -1652,9 +1607,6 @@ footer p {
   }
   .title7-1 {
     width: 65%;
-  }
-  .title9 {
-    width: 90%;
   }
   .about {
     margin: 80px auto 40px;
@@ -1689,8 +1641,8 @@ footer p {
   .skills {
     width: 85%;
   }
-  .title9 {
-    width: 75%;
+  #contact-form2 {
+    width: 80%;
   }
 }
 
@@ -1726,20 +1678,7 @@ footer p {
   }
   #face-img {
     margin: 140px auto 0;
-    /* width: 85%; */
   }
-  /* .face .designer .description, .face .coder .description {
-    margin-top: -150px;
-  }
-  .face .designer {
-    margin-left: -50px;
-  }
-  .face .coder {
-    margin-right: -50px;
-  }
-  .face .coder, .face .designer {
-    width: 42%;
-  } */
   .title3 {
     width: 90%;
     display: block;
@@ -1814,7 +1753,7 @@ footer p {
   }
   #contact-form2 {
     display: block;
-    width: 80%;
+    width: 600px;
     margin: 150px auto 40px;
     float: none;
   }
@@ -1833,6 +1772,9 @@ footer p {
 }
 
 @media only screen and (min-width: 800px) {
+  .col-md-9 {
+    width: 100%;
+  }
   .title4 {
     width: 400px;
   }
@@ -1878,21 +1820,6 @@ footer p {
   p {
     font-size: 14px;
   }
-
-  /*
-  .face .coder, .face .designer {
-    width: 28%;
-  }
-  .face .designer .description, .face .coder .description {
-    margin-top: -40px;
-  }
-  .face .designer {
-    margin-left: 40px;
-  }
-  .face .coder {
-    margin-right: 30px;
-  } */
-
   .content {
     text-align: center;
     margin: 40px auto 0;
@@ -2061,24 +1988,6 @@ footer p {
     text-align: center;
     margin-top: 150px;
   }
-  /* .face .designer .description, .face .coder .description {
-    width: 250px;
-  }
-  .face .designer .description {
-    margin-left: 90px;
-  }
-  .face .coder .description {
-    margin-right: 90px;
-  }
-  .face .coder h1, .face .designer h1 {
-    font-size: 50px;
-    font-size: 5rem;
-  }
-  .face .coder p, .face .designer p {
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 1.4em;
-  } */
   .title3 {
     width: 750px;
   }
@@ -2175,10 +2084,6 @@ footer p {
   }
   .frame {
     display: inline-block;
-  }
-  #contact-form2,
-  #contact-info {
-    display: none;
   }
 }
 
@@ -2398,6 +2303,10 @@ footer p {
   }
   #button_open_envelope {
     top: -120px;
+  }
+  #contact-form2,
+  #contact-info {
+    display: none;
   }
 }
 
