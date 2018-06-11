@@ -1007,6 +1007,12 @@ a {
 .project-bg9 .img-square {
  background-image: url('../img/projects-cover/github.png');
 }
+.project-bg10 {
+  background-image: url('../img/websites/eurotours.png');
+}
+.project-bg10 .img-square {
+ background-image: url('../img/projects-cover/euro-landmarks.png');
+}
 /*-----------------------------------------------------------------------------------*/
 /* Page 3. WORK SECTION ENDS */
 /*-----------------------------------------------------------------------------------*/
