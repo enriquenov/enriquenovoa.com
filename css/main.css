@@ -888,10 +888,14 @@ a {
   text-align: center;
 }*/
 .skills-legend {
-  margin-bottom: 30px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-legend span {
+  font-size: 12px;
   margin: 0 8px;
 }
 
@@ -948,16 +952,6 @@ a {
   margin: 0 5px 12px;
   padding: 2.5px 15px 3.5px;
   font-size: 16px;
-}
-
-.skill,
-.skill2,
-.skill3 {
-  width: 20%;
-  height: 18px;
-  background-color: #aaa67f;
-  background-color: #aa8566;
-  background-color: #ff8b55;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1604,14 +1598,6 @@ footer p {
     width: 100%;
     top: 40px;
   }
-  .skill-bar {
-    margin: 10px 0;
-  }
-  .skill,
-  .skill2,
-  .skill3 {
-    height: 12px;
-  }
   .hobbies {
     margin: 80px auto 60px;
   }
@@ -1825,9 +1811,6 @@ footer p {
     margin: 100px auto 80px 30px;
     width: 130%;
   }
-  .skill-bar {
-    margin: 16px 0;
-  }
   .title7 {
     display: block;
     width: 180%;
@@ -2029,9 +2012,6 @@ footer p {
     margin: 90px auto 80px 40px;
     width: 120%;
   }
-  .skill-bar {
-    margin: 18px 0;
-  }
   .title6 {
     width: 520px;
     top: 420px;
@@ -2134,14 +2114,6 @@ footer p {
   .skills {
     margin: 90px auto 80px 50px;
   }
-  .skill-bar {
-    margin: 15px 0;
-  }
-  .skill,
-  .skill2,
-  .skill3 {
-    height: 15px;
-  }
   .title7 {
     top: 890px;
     width: 510px;
@@ -2190,9 +2162,6 @@ footer p {
   .skills {
     margin: 100px auto 80px 70px;
     width: 120%;
-  }
-  .skill-bar {
-    margin: 16px 0;
   }
   .education {
     margin-top: -30px;
@@ -2413,17 +2382,6 @@ footer p {
     width: 147%;
     margin: 160px auto 60px;
   }
-  .skills {
-    /*margin: 130px auto 80px 70px*/
-  }
-  .skill-bar {
-    margin: 19px 0;
-  }
-  .skill,
-  .skill2,
-  .skill3 {
-    height: 18px;
-  }
   .title8 {
     margin-top: 90px;
   }
@@ -2587,10 +2545,6 @@ footer p {
   .skills {
     margin: 140px auto 100px 100px;
   }
-  .skill-bar {
-    width: 90%;
-    margin: 20px 0;
-  }
   .title5 {
     width: 460px;
   }
@@ -2698,9 +2652,6 @@ footer p {
   .skills {
     width: 110%;
     margin: 140px auto 100px 100px;
-  }
-  .skill-bar {
-    margin: 23px 0;
   }
   .title5 {
     width: 500px;

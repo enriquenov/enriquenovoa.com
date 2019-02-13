@@ -111,7 +111,7 @@ $(document).ready(function() {
   console.log('will probably not use this');
 
   //loop through skillsBar
-  $('.skill').each(function() {
+  $('.skill1').each(function() {
     // Build a scene
     var scene = new ScrollMagic.Scene({
       triggerElement: this,
@@ -122,7 +122,6 @@ $(document).ready(function() {
       .addTo(controller);
   });
 
-  //loop through skillsBar2
   $('.skill2').each(function() {
     // Build a scene
     var scene = new ScrollMagic.Scene({
@@ -130,7 +129,7 @@ $(document).ready(function() {
       triggerHook: 1,
       reverse: false,
     })
-      .setClassToggle(this, 'css')
+      .setClassToggle(this, 'html')
       .addTo(controller);
   });
 
