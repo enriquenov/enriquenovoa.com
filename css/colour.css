@@ -1,51 +1,89 @@
-.colour { color: #46cea0; }
-a {	color:#3b596a; }
+.colour {
+  color: #46cea0;
+}
+a {
+  color: #3b596a;
+}
 /*a:hover{ color: white; }*/
-a:focus {color:#3b596a; }
-::selection { background: #46cea0; color: #fff; }
-::-moz-selection { background: #46cea0; color: #fff; }
+a:focus {
+  color: #3b596a;
+}
+::selection {
+  background: #46cea0;
+  color: #fff;
+}
+::-moz-selection {
+  background: #46cea0;
+  color: #fff;
+}
 
 /**** TOOLTIP ****/
-.tooltip-inner { background-color:#46cea0; }
-.tooltip.top .tooltip-arrow {  border-top-color: #46cea0; }
+.tooltip-inner {
+  background-color: #46cea0;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #46cea0;
+}
 
 /**** CIRCLE LINK ****/
-.circle-link { background:#46cea0; }
+.circle-link {
+  background: #46cea0;
+}
 
 /**** MENU ****/
-.header { background: #FFF; }
+.header {
+  background: #fff;
+}
 
 /**** STACK SLIDER BUTTON****/
-.st-wrapper nav span:before { background:#46cea0;}
-/**** STACK SLIDER LINES ****/
-.st-stack {
-	background-image: -webkit-linear-gradient(top, #f0f0f0 50%, #46cea0 50%);
-	background-image: -moz-linear-gradient(top, #f0f0f0 50%, #46cea0 50%);
-	background-image: -o-linear-gradient(top, #f0f0f0 50%, #46cea0 50%);
-	background-image: -ms-linear-gradient(top, #f0f0f0 50%, #46cea0 50%);
-	background-image: linear-gradient(to bottom, #f0f0f0 50%, #46cea0 50%);
+.st-wrapper nav span:before {
+  background: #46cea0;
 }
 
 /**** TEAM BOX COLOUR ****/
-.grida figcaption { background:#46cea0; }
+.grida figcaption {
+  background: #46cea0;
+}
 
 /**** WORK - HOVER BG - LOAD MORE HOVER - LIGHTBOX BAR ****/
-.thumbnail-caption{ background: #46cea0; }
-.grid-loadMore:hover{ color:#46cea0!important; }
-.autoGrid-nav{ background: #46cea0; }
+.thumbnail-caption {
+  background: #46cea0;
+}
+.grid-loadMore:hover {
+  color: #46cea0 !important;
+}
+.autoGrid-nav {
+  background: #46cea0;
+}
 
 /**** BAR - BIG STATS ****/
-#bigstats { background: #46cea0; }
+#bigstats {
+  background: #46cea0;
+}
 
 /**** BAR - CLIENTS ****/
-#Section-Colour { background: #46cea0; }
+#Section-Colour {
+  background: #46cea0;
+}
 
 /**** PRICING TABLE CIRCLE COLOUR ****/
-#pricing-table h3 span { background: #46cea0; }
+#pricing-table h3 span {
+  background: #46cea0;
+}
 
 /**** CONTACT SECTION CONTACT BUTTON HOVER COLOUR ****/
-#ajax-contact-form input.btn { background:#46cea0!important; color:#fff!important;}
-#ajax-contact-form input.btn:hover { background:#95A5A6!important; color:#fff!important; }
+#ajax-contact-form input.btn {
+  background: #46cea0 !important;
+  color: #fff !important;
+}
+#ajax-contact-form input.btn:hover {
+  background: #95a5a6 !important;
+  color: #fff !important;
+}
 
 /**** TABS ****/
-.nav-tabs .active a, .nav-tabs a:hover, .nav-tabs .active  a:focus { background-color: #1abc9c!important;}
+.nav-tabs .active a,
+.nav-tabs a:hover,
+.nav-tabs .active a:focus {
+  background-color: #1abc9c !important;
+}

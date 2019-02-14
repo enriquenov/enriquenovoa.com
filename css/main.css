@@ -1,10 +1,8 @@
 /*
-Theme Name: Enrique Novoa
-Theme URI: http://www.enriquenovoa.com/
 Description: Portfolio website of Enrique Novoa
 Author: Enrique Novoa
 Author URI: http://www.enriquenovoa.com/
-Version: 1.0
+Version: 2.0
 */
 /* Reset =================================================== */
 * {
@@ -83,7 +81,6 @@ body {
   font-family: 'Muli';
   letter-spacing: 0.05em;
   font-weight: 400;
-  /*background-image: linear-gradient(0deg, #78ffd6 5%, #007991 98%);*/
   background-color: #fff;
   font-size: 18px;
   font-size: 1.8rem;
@@ -285,7 +282,6 @@ p {
   font-family: 'Quattrocento Sans';
   font-size: 14px;
   margin: 2px auto 0px;
-  font-family: 'Josefin Sans';
   font-weight: 100;
 }
 
@@ -887,8 +883,9 @@ a {
   margin: 10px;
   text-align: center;
 }*/
+
 .skills-legend {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -935,6 +932,7 @@ a {
   font-weight: bold;
   text-align: left;
   margin-bottom: 18px;
+  padding-left: 10px;
 }
 
 .skill-group {
@@ -946,7 +944,7 @@ a {
 .skill-name {
   text-align: left;
   color: #0c090a;
-  /* border: 1px solid #444; */
+  box-shadow: 0px 2px 15px -5px rgb(128, 128, 128);
   border-radius: 22px;
   color: #fff;
   margin: 0 5px 12px;
@@ -1077,6 +1075,18 @@ a {
 }
 .project-bg10 .img-square {
   background-image: url('../img/projects-cover/euro-landmarks.png');
+}
+.project-bg11 {
+  background-image: url('../img/websites/memorabilia.png');
+}
+.project-bg11 .img-square {
+  background-image: url('../img/projects-cover/film.png');
+}
+.project-bg12 {
+  background-image: url('../img/websites/shape-shifter.png');
+}
+.project-bg12 .img-square {
+  background-image: url('../img/projects-cover/octahedron.png');
 }
 /*-----------------------------------------------------------------------------------*/
 /* Page 3. WORK SECTION ENDS */

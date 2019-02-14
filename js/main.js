@@ -327,7 +327,7 @@ $(document).ready(function() {
         ) {
           url = $(this).attr('src');
         }
-        //console.log(url);
+        // console.log(url);
 
         if (url.length > 0) {
           items.push(url);
