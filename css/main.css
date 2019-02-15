@@ -324,6 +324,14 @@ p {
   background-color: #64b3f4;
 }
 
+.top-section #logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 #triptico .bottom-section {
   height: 56vh;
   text-align: right;

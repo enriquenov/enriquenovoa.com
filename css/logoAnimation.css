@@ -7,16 +7,28 @@ body {
 }
 
 svg {
-  margin-top: 8vh;
+  /* margin-top: 8vh; */
   height: 15vh;
   cursor: pointer;
 }
 
-svg .st0 {fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-dasharray:9.7168,9.7168;}
-svg .st1 {fill:none;stroke:#FFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+svg .st0 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 9.7168, 9.7168;
+}
+svg .st1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
 
 svg g.animatedLogo line {
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   transition-timing-function: ease;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -47,7 +59,6 @@ svg g.animatedLogo line {
 #mayorQueBottom {
   transform-origin: right;
 }
-
 
 svg:hover g.animatedLogo line#menorQueTop {
   transform: rotate(39.8deg) translate(2.2px, -6px) scale(0.5);
