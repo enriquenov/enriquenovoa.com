@@ -298,9 +298,9 @@ p {
 
 #triptico {
   top: 7vh;
-  /*right: 80px;*/
   bottom: auto;
   width: 21.8%;
+  min-height: 600px;
   height: 86vh;
   position: fixed;
   box-shadow: 2px 2px 15px #888;
@@ -320,6 +320,7 @@ p {
 }
 
 #triptico .top-section {
+  min-height: 200px;
   height: 30vh;
   background-color: #64b3f4;
 }
@@ -333,18 +334,20 @@ p {
 }
 
 #triptico .bottom-section {
+  min-height: 400px;
   height: 56vh;
   text-align: right;
   font-family: 'Quattrocento Sans';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #triptico .bottom-section ul#myMenu {
-  margin: 0 auto;
-  padding-top: 1vh;
-  width: 80%;
-  font-size: 18px;
-  font-size: 2.3vh;
+  font-size: calc(12px + 1vh);
   font-weight: 500;
+  margin: 0 auto;
+  width: 80%;
 }
 
 #triptico .bottom-section ul#myMenu li {
@@ -387,35 +390,18 @@ p {
 }
 
 #social-media {
-  text-align: center;
-  margin: 12vh auto 0;
-}
-
-#resumePdf {
-  text-align: center;
-  margin: 0 auto;
-}
-
-#social-media li,
-#resumePdf li {
-  display: inline-block;
-  border-top: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 20px;
-  font-size: 2.3vh;
 }
 
-#resumePdf li {
-  margin: 1.5vh auto;
-  display: block;
+#social-media a {
+  margin: 10px 25px;
+  font-size: calc(12px + 2.8vh);
 }
 
-#social-media li a,
-#resumePdf li a {
-  font-size: 2em;
-}
-
-#social-media li a:hover,
-#resumePdf li a:hover {
+#social-media a:hover {
   color: #64b3f4;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -426,13 +412,12 @@ p {
 #footer {
   text-align: center;
   width: 100%;
-  margin: 4vh 0 0;
   bottom: 0;
   cursor: default;
 }
 
 #footer p {
-  font-size: 2vh;
+  font-size: calc(12px + 0.8vh);
 }
 
 /*NAVIGATION TRIPTICO*/
@@ -1998,9 +1983,6 @@ footer p {
   }
   #resumePdf li {
     margin: 1.5vh auto;
-  }
-  #footer {
-    margin: 3vh 0 0;
   }
   .title3 p,
   .title4 p,

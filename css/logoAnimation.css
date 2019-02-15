@@ -8,6 +8,7 @@ body {
 
 svg {
   /* margin-top: 8vh; */
+  min-height: 110px;
   height: 15vh;
   cursor: pointer;
 }
