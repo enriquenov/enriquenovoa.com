@@ -397,8 +397,8 @@ p {
 }
 
 #social-media a {
-  margin: 10px 25px;
-  font-size: calc(12px + 2.8vh);
+  margin: 10px 30px;
+  font-size: calc(12px + 2.6vh);
 }
 
 #social-media a:hover {
@@ -414,6 +414,7 @@ p {
   width: 100%;
   bottom: 0;
   cursor: default;
+  margin-bottom: calc(10px + 0.8vh);
 }
 
 #footer p {
