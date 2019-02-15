@@ -250,8 +250,7 @@ p {
   margin: 0;
   padding: 10px 30px;
   transform: skewX(-140deg);
-  color: #64b3f4;
-  color: #626567;
+  color: #444;
 }
 
 .hanger {
@@ -279,7 +278,7 @@ p {
 }
 
 .title2 h1 {
-  font-family: 'Quattrocento Sans';
+  /* font-family: 'Quattrocento Sans'; */
   font-size: 14px;
   margin: 2px auto 0px;
   font-weight: 100;
@@ -290,7 +289,7 @@ p {
   font-size: 16px;
 
   /* font-weight: bold; */
-  /* font-family: 'Julius Sans One'; */
+  /* font-family: 'Josefin Sans'; */
 }
 
 /*TITLES END */
@@ -1022,12 +1021,12 @@ a {
 .project-bg1 .img-square {
   background-image: url('../img/projects-cover/weather-app.png');
 }
-.project-bg2 {
+/* .project-bg2 {
   background-image: url('../img/websites/google-books-search.png');
 }
 .project-bg2 .img-square {
   background-image: url('../img/projects-cover/google-books.PNG');
-}
+} */
 .project-bg3 {
   background-image: url('../img/websites/quote-generator.png');
 }
@@ -1087,6 +1086,18 @@ a {
 }
 .project-bg12 .img-square {
   background-image: url('../img/projects-cover/octahedron.png');
+}
+.project-bg13 {
+  background-image: url('../img/websites/catify.png');
+}
+.project-bg13 .img-square {
+  background-image: url('../img/projects-cover/serj-logo.png');
+}
+.project-bg14 {
+  background-image: url('../img/websites/dreysac.png');
+}
+.project-bg14 .img-square {
+  background-image: url('../img/projects-cover/drugstore.png');
 }
 /*-----------------------------------------------------------------------------------*/
 /* Page 3. WORK SECTION ENDS */
@@ -2092,7 +2103,7 @@ footer p {
     font-size: 30px;
   }
   .title2 h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
   .title2 h1 span {
     font-size: 36px;
@@ -2635,15 +2646,6 @@ footer p {
   }
   .title2 {
     margin: 200px auto 0;
-  }
-  .title3 p,
-  .title4 p,
-  .title5 p,
-  .title6 p,
-  .title7 p,
-  .title8 p,
-  .title9 p {
-    font-size: 36px;
   }
   .about {
     margin-top: 200px;
