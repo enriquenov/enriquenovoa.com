@@ -1652,7 +1652,6 @@ footer p {
     width: 100%;
     display: inline-block;
     float: right;
-    margin: 0 0 20px;
   }
   ::-moz-placeholder {
     font-size: 14px;
@@ -2593,9 +2592,6 @@ footer p {
   }
   #resume {
     height: auto;
-  }
-  #triptico {
-    max-height: 1000px;
   }
   #triptico .bottom-section ul#myMenu li a,
   #triptico .bottom-section ul#myMenu li a:hover,
